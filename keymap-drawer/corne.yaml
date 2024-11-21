@@ -42,14 +42,14 @@ layers:
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
   - $$mdi:volume-off$$
   - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: _}
-  - {t: '=', h: NUMBER, s: +}
+  - {t: '=', h: NUM_CS, s: +}
   - {t: '$$mdi:keyboard-space$$', h: FN_MS}
   - $$mdi:arrow-right-bold$$
   - LGUI
   - {t: (, h: CONFIG}
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  NUMBER:
+  NUM_CS:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -75,7 +75,7 @@ layers:
   - {t: '5', s: '%'}
   - '6'
   - +
-  - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
+  - {t: ']', h: '$$mdi:apple-keyboard-control$$', s: '}'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - HOME
   - PG UP
@@ -83,12 +83,12 @@ layers:
   - END
   - INS
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ']', s: '}'}
+  - '{'
   - '1'
   - '2'
   - '3'
   - {t: ., s: '>'}
-  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
+  - {t: '}', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
