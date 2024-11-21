@@ -27,7 +27,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
-  - '&lbkt_lsft_caps'
+  - '&lbrc_lsft_caps'
   - Z
   - X
   - C
@@ -41,12 +41,12 @@ layers:
   - {t: /, s: '?'}
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
   - $$mdi:volume-off$$
-  - _
-  - {t: (, h: NUMBER}
+  - {t: '-', h: '4', s: _}
+  - {t: '=', h: NUMBER, s: +}
   - {t: '$$mdi:keyboard-space$$', h: FN}
   - $$mdi:arrow-right-bold$$
   - LGUI
-  - {t: '{', h: SYMBOL}
+  - {t: (, h: SYMBOL}
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   NUMBER:
@@ -70,12 +70,12 @@ layers:
   - $$mdi:arrow-right-bold$$
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - F1
+  - {t: '[', s: '{'}
   - '4'
   - {t: '5', s: '%'}
   - '6'
-  - F5
-  - {t: '''', s: '"'}
+  - +
+  - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - HOME
   - PG UP
@@ -83,19 +83,19 @@ layers:
   - END
   - INS
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - F7
+  - {t: ']', s: '}'}
   - '1'
   - '2'
   - '3'
-  - F11
-  - F12
+  - {t: ., s: '>'}
+  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&lclk_rclk'
-  - $$mdi:backspace-reverse-outline$$
+  - _
   - {t: '0', s: )}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SYMBOL:
@@ -237,7 +237,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
