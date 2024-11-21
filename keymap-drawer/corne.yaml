@@ -43,10 +43,10 @@ layers:
   - $$mdi:volume-off$$
   - {t: '-', h: layer4, s: _}
   - {t: '=', h: NUMBER, s: +}
-  - {t: '$$mdi:keyboard-space$$', h: FN}
+  - {t: '$$mdi:keyboard-space$$', h: FUNC}
   - $$mdi:arrow-right-bold$$
   - LGUI
-  - {t: (, h: FN}
+  - {t: (, h: CONFIG}
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   NUMBER:
@@ -98,7 +98,7 @@ layers:
   - _
   - {t: '0', h: '$$mdi:apple-keyboard-option$$', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
-  FN:
+  FUNC:
   - '~'
   - '!'
   - '@'
@@ -119,12 +119,12 @@ layers:
   - F5
   - F6
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - $$mdi:progress-download$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - PRINTSCREEN
-  - F12
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - {t: F6, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F7, h: '$$mdi:apple-keyboard-shift$$'}
   - F8
   - F9
@@ -132,22 +132,22 @@ layers:
   - F11
   - F12
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - SCROLLLOCK
-  - PAUSE BREAK
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - {t: F12, h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&lclk_rclk'
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
-  SYMBOL:
+  CONFIG:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - '@'
@@ -193,7 +193,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   layer4:
