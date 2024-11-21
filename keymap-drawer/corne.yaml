@@ -27,7 +27,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
-  - '&lbrc_lsft_caps'
+  - {t: '=', h: '$$mdi:apple-keyboard-shift$$', s: +}
   - Z
   - X
   - C
@@ -42,7 +42,7 @@ layers:
   - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
   - $$mdi:volume-off$$
   - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: _}
-  - {t: '=', h: NUM_CS, s: +}
+  - {t: '{', h: NUM_CS}
   - {t: '$$mdi:keyboard-space$$', h: CFG_MS}
   - $$mdi:arrow-right-bold$$
   - LGUI
