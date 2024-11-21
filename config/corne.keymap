@@ -15,11 +15,11 @@
 
 / {
     behaviors {
-        lsft_caps: lsft_caps {
+        lbkt_lsft_caps: lbkt_lsft_caps {
             compatible = "zmk,behavior-tap-dance";
-            label = "LSFT_CAPS";
+            label = "LBKT_LSFT_CAPS";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
+            bindings = <&mt LEFT_SHIFT LBKT>, <&caps_word>;
         };
 
         lclk_rclk: lclk_rclk {
@@ -71,11 +71,11 @@
             //                                                      enter
 
             bindings = <
-&kp ESC        &kp Q  &kp W       &kp E      &kp R       &kp T          &kp UP_ARROW     &kp Y     &kp U       &kp I           &kp O    &kp P     &kp BSPC
-&mt LCTRL TAB  &kp A  &kp S       &kp D      &kp F       &kp G          &kp DOWN_ARROW   &kp H     &kp J       &kp K           &kp L    &kp SEMI  &mt RCTRL ENTER
-&lsft_caps     &kp Z  &kp X       &kp C      &kp V       &kp B          &kp LEFT_ARROW   &kp N     &kp M       &kp COMMA       &kp DOT  &kp FSLH  &mt RSHFT LBKT
-                      &kp C_MUTE  &kp UNDER  &lt 1 LPAR  &lt 3 SPACE    &kp RIGHT_ARROW  &kp LGUI  &lt 2 LBRC  &mt RALT RIGHT
-                                                                        &none
+&kp ESC          &kp Q  &kp W       &kp E      &kp R       &kp T          &kp UP_ARROW     &kp Y     &kp U       &kp I           &kp O    &kp P     &kp BSPC
+&mt LCTRL TAB    &kp A  &kp S       &kp D      &kp F       &kp G          &kp DOWN_ARROW   &kp H     &kp J       &kp K           &kp L    &kp SEMI  &mt RCTRL ENTER
+&lbkt_lsft_caps  &kp Z  &kp X       &kp C      &kp V       &kp B          &kp LEFT_ARROW   &kp N     &kp M       &kp COMMA       &kp DOT  &kp FSLH  &mt RSHFT SQT
+                        &kp C_MUTE  &kp UNDER  &lt 1 LPAR  &lt 3 SPACE    &kp RIGHT_ARROW  &kp LGUI  &lt 2 LBRC  &mt RALT RIGHT
+                                                                          &none
             >;
 
             label = "QWERTY";
@@ -92,10 +92,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE        &kp N1    &kp N2        &kp N3     &kp N4     &kp N5     &mmv MOVE_UP     &kp N6      &kp N7   &kp N8  &kp N9   &kp N0   &kp BSLH
-&mt LCTRL BSPC   &kp LEFT  &kp UP_ARROW  &kp DOWN   &kp RIGHT  &kp DEL    &mmv MOVE_DOWN   &kp F1      &kp F2   &kp F3  &kp F4   &kp F5   &kp F6
-&mt LSHFT ENTER  &kp HOME  &kp PG_UP     &kp PG_DN  &kp END    &kp INS    &mmv MOVE_LEFT   &kp F7      &kp F8   &kp F9  &kp F10  &kp F11  &kp F12
-                           &none         &trans     &trans     &trans     &mmv MOVE_RIGHT  &lclk_rclk  &kp DEL  &trans
+&kp GRAVE        &kp N1    &kp N2        &kp N3     &kp N4     &kp N5     &mmv MOVE_UP     &kp N6      &kp N7        &kp N8        &kp N9        &kp N0   &kp BSLH
+&mt LCTRL BSPC   &kp LEFT  &kp UP_ARROW  &kp DOWN   &kp RIGHT  &kp DEL    &mmv MOVE_DOWN   &kp F1      &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp F5   &kp SQT
+&mt LSHFT ENTER  &kp HOME  &kp PG_UP     &kp PG_DN  &kp END    &kp INS    &mmv MOVE_LEFT   &kp F7      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F11  &kp F12
+                           &none         &trans     &trans     &trans     &mmv MOVE_RIGHT  &lclk_rclk  &kp DEL       &kp N0
                                                                           &none
             >;
 
