@@ -22,6 +22,13 @@
             bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
 
+        lclk_rclk: lclk_rclk {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LCLK_RCLK";
+            #binding-cells = <0>;
+            bindings = <&mkp LCLK>, <&mkp RCLK>;
+        };
+
         mmv {
             acceleration-exponent = <1>;      // 1
             time-to-max-speed-ms = <900>;    // 40
@@ -85,11 +92,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE        &kp N1    &kp N2        &kp N3     &kp N4     &kp N5             &mmv MOVE_UP     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSLH
-&mt LCTRL BSPC   &kp LEFT  &kp UP_ARROW  &kp DOWN   &kp RIGHT  &kp DEL            &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&mt LSHFT ENTER  &kp HOME  &kp PG_UP     &kp PG_DN  &kp END    &rgb_ug RGB_EFF    &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                           &kp C_MUTE    &trans     &trans     &trans             &mmv MOVE_RIGHT  &kp INS          &kp DEL          &trans
-                                                                                  &mkp LCLK
+&kp GRAVE        &kp N1    &kp N2        &kp N3     &kp N4     &kp N5     &mmv MOVE_UP     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSLH
+&mt LCTRL BSPC   &kp LEFT  &kp UP_ARROW  &kp DOWN   &kp RIGHT  &kp DEL    &mmv MOVE_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&mt LSHFT ENTER  &kp HOME  &kp PG_UP     &kp PG_DN  &kp END    &kp INS    &mmv MOVE_LEFT   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+                           &none         &trans     &trans     &trans     &mmv MOVE_RIGHT  &lclk_rclk       &kp DEL          &trans
+                                                                          &mkp LCLK
             >;
 
             label = "NUMBER";
