@@ -81,7 +81,7 @@ layers:
   - PG UP
   - PG DN
   - END
-  - RGB EFF
+  - INS
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - RGB EFR
   - RGB SPI
@@ -89,12 +89,12 @@ layers:
   - RGB BRD
   - END
   - PG DN
-  - $$mdi:volume-off$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - INS
+  - '&lclk_rclk'
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$

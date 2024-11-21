@@ -722,9 +722,7 @@ rect.held, rect.combo.held {
 <g transform="translate(308, 182)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">EFF</tspan>
-</text>
+<text x="0" y="-4" class="key tap">INS</text>
 </g>
 <g transform="translate(406, 84)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -772,10 +770,10 @@ rect.held, rect.combo.held {
 <tspan x="0" dy="-0.6em">PG</tspan><tspan x="0" dy="1.2em">DN</tspan>
 </text>
 </g>
-<g transform="translate(392, 210)" class="key keypos-39">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:volume-off"/>
+<g transform="translate(392, 210)" class="key none keypos-39">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(252, 252)" class="key trans keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -800,7 +798,7 @@ rect.held, rect.combo.held {
 <g transform="translate(542, 299) rotate(-30.0)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-38" width="40" height="68" class="key"/>
-<text x="0" y="-4" class="key tap">INS</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;lclk_rclk</tspan></text>
 </g>
 <g transform="translate(610, 276) rotate(-30.0)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
