@@ -2,6 +2,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -128,9 +129,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &mmv MOVE_UP     &bl BL_TOG  &bl BL_CYCLE  &kp ASTRK  &kp LPAR  &kp RPAR      &bt BT_CLR_ALL
-&rgb_ug RGB_ON   &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF    &mmv MOVE_DOWN   &bl BL_ON   &bl BL_INC    &kp LBKT   &kp RBKT  &out OUT_BLE  &sys_reset
-&rgb_ug RGB_OFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR    &mmv MOVE_LEFT   &bl BL_OFF  &bl BL_DEC    &kp LBRC   &kp RBRC  &out OUT_USB  &bootloader
+&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &mmv MOVE_UP     &bl BL_TOG  &bl BL_CYCLE  &ext_power EP_TOG  &none  &none         &soft_off
+&rgb_ug RGB_ON   &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF    &mmv MOVE_DOWN   &bl BL_ON   &bl BL_INC    &ext_power EP_ON   &none  &out OUT_BLE  &sys_reset
+&rgb_ug RGB_OFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR    &mmv MOVE_LEFT   &bl BL_OFF  &bl BL_DEC    &ext_power EP_OFF  &none  &out OUT_USB  &bootloader
                                   &trans           &trans           &trans           &trans             &mmv MOVE_RIGHT  &lclk_rclk  &trans        &trans
                                                                                                         &mkp LCLK
             >;
