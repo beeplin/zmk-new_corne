@@ -112,7 +112,7 @@ layers:
   - (
   - )
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:bluetooth-off$$
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
@@ -125,7 +125,7 @@ layers:
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
   - {t: '`', s: '~'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:progress-download$$
   - OUT USB
   - OUT BLE
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -164,9 +164,9 @@ layers:
   - {t: F1, h: '$$mdi:apple-keyboard-control$$'}
   - F2
   - F3
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
+  - F4
+  - F5
+  - F6
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:progress-download$$
   - $$mdi:mouse-left-click-outline$$
@@ -175,11 +175,11 @@ layers:
   - PRINTSCREEN
   - F12
   - {t: F7, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB5'
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
