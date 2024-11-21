@@ -157,10 +157,10 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&bl BL_TOG'
   - '&bl BL_CYCLE'
-  - '*'
-  - (
-  - )
-  - BT CLR ALL
+  - EP TOG
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&soft_off'
   - RGB ON
   - RGB HUI
   - RGB SAI
@@ -170,8 +170,8 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '&bl BL_ON'
   - '&bl BL_INC'
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - EP ON
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - OUT BLE
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - RGB OFF
@@ -183,8 +183,8 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '&bl BL_OFF'
   - '&bl BL_DEC'
-  - '{'
-  - '}'
+  - EP OFF
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - OUT USB
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
