@@ -106,14 +106,14 @@
         layer2 {
             display-name = "FUNC";
             bindings = <
-&kp TILDE              &kp EXCL  &kp AT      &kp POUND  &kp DLLR   &kp PRCNT        &mmv MOVE_UP     &kp CARET   &kp AMPS  &kp ASTRK       &kp LPAR  &kp RPAR  &kp PIPE
-&mt LCTRL LA(F4)       &none     &none       &none      &none      &kp LC(PLUS)     &mmv MOVE_DOWN   &kp F1      &kp F2    &kp F3          &kp F4    &kp F5    &mt RCTRL F6
-&mt LSHFT PRINTSCREEN  &none     &none       &none      &kp LG(V)  &kp LC(MINUS)    &mmv MOVE_LEFT   &kp F7      &kp F8    &kp F9          &kp F10   &kp F11   &mt LSHFT F12
-                                 &kp C_MUTE  &trans     &trans     &trans           &mmv MOVE_RIGHT  &lclk_rclk  &trans    &mt RALT K_APP
-                                                                                    &mkp LCLK
+&kp TILDE              &kp EXCL   &kp AT      &kp POUND  &kp DLLR   &kp PRCNT        &mmv MOVE_UP     &kp CARET   &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp PIPE
+&mt LCTRL LA(F4)       &kp LG(A)  &kp LG(S)   &kp LG(D)  &none      &kp LC(PLUS)     &mmv MOVE_DOWN   &kp F1      &kp F2    &kp F3     &kp F4    &kp F5    &mt RCTRL F6
+&mt LSHFT PRINTSCREEN  &kp K_APP  &kp LG(X)   &none      &kp LG(V)  &kp LC(MINUS)    &mmv MOVE_LEFT   &kp F7      &kp F8    &kp F9     &kp F10   &kp F11   &mt LSHFT F12
+                                  &kp C_MUTE  &trans     &trans     &trans           &mmv MOVE_RIGHT  &lclk_rclk  &trans    &trans
+                                                                                     &mkp LCLK
             >;
 
-            label = "FUNC";
+            label = "FN_MS";
             sensor-bindings = <&scroll_encoder>;
         };
 
