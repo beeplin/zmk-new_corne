@@ -158,8 +158,8 @@ layers:
   - '&bl BL_TOG'
   - '&bl BL_CYCLE'
   - EP TOG
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - BT CLR ALL
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - '&soft_off'
   - RGB ON
   - RGB HUI
@@ -171,7 +171,7 @@ layers:
   - '&bl BL_ON'
   - '&bl BL_INC'
   - EP ON
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - OUT BLE
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - RGB OFF
@@ -184,7 +184,7 @@ layers:
   - '&bl BL_OFF'
   - '&bl BL_DEC'
   - EP OFF
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - OUT USB
   - $$mdi:progress-download$$
   - $$mdi:progress-download$$
