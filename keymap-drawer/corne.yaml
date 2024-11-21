@@ -43,7 +43,7 @@ layers:
   - $$mdi:volume-off$$
   - {t: '-', h: '$$mdi:apple-keyboard-option$$', s: _}
   - {t: '=', h: NUMBER, s: +}
-  - {t: '$$mdi:keyboard-space$$', h: FUNC}
+  - {t: '$$mdi:keyboard-space$$', h: FN_MS}
   - $$mdi:arrow-right-bold$$
   - LGUI
   - {t: (, h: CONFIG}
@@ -98,7 +98,7 @@ layers:
   - _
   - {t: '0', h: '$$mdi:apple-keyboard-option$$', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
-  FUNC:
+  FN_MS:
   - '~'
   - '!'
   - '@'
@@ -113,9 +113,9 @@ layers:
   - )
   - '|'
   - {t: Alt+ F4, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+ +
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -126,8 +126,8 @@ layers:
   - F5
   - {t: F6, h: '$$mdi:apple-keyboard-control$$'}
   - {t: PRINTSCREEN, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - APP
+  - {t: X, h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   - {t: Ctl+ -, s: Ctl+ _}
@@ -145,7 +145,7 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&lclk_rclk'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: APP, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   CONFIG:
   - {t: '$$mdi:transfer$$', type: trans}
