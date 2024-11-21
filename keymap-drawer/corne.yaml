@@ -27,7 +27,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
-  - '&lsft_caps'
+  - '&lbkt_lsft_caps'
   - Z
   - X
   - C
@@ -39,7 +39,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '[', h: '$$mdi:apple-keyboard-shift$$', s: '{'}
+  - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
   - $$mdi:volume-off$$
   - _
   - {t: (, h: NUMBER}
@@ -71,11 +71,11 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - F1
-  - F2
-  - F3
-  - F4
+  - '4'
+  - {t: '5', s: '%'}
+  - '6'
   - F5
-  - F6
+  - {t: '''', s: '"'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - HOME
   - PG UP
@@ -84,9 +84,9 @@ layers:
   - INS
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - F7
-  - F8
-  - F9
-  - F10
+  - '1'
+  - '2'
+  - '3'
   - F11
   - F12
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -96,7 +96,7 @@ layers:
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - '&lclk_rclk'
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '0', s: )}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
