@@ -112,11 +112,11 @@ layers:
   - (
   - )
   - '|'
-  - PRINTSCREEN
-  - F2
-  - F3
-  - F4
-  - F5
+  - {t: Alt+ F4, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+ +
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - F1
@@ -125,10 +125,10 @@ layers:
   - F4
   - F5
   - {t: F6, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F7, h: '$$mdi:apple-keyboard-shift$$'}
-  - F8
-  - F9
-  - F10
+  - {t: PRINTSCREEN, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   - {t: Ctl+ -, s: Ctl+ _}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
