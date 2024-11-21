@@ -155,8 +155,8 @@ layers:
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - ^
-  - '&'
+  - '&bl BL_TOG'
+  - '&bl BL_CYCLE'
   - '*'
   - (
   - )
@@ -164,12 +164,12 @@ layers:
   - RGB ON
   - RGB HUI
   - RGB SAI
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
+  - RGB BRI
+  - RGB SPI
+  - RGB EFF
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '-', s: _}
-  - {t: '=', s: +}
+  - '&bl BL_ON'
+  - '&bl BL_INC'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - OUT BLE
@@ -177,12 +177,12 @@ layers:
   - RGB OFF
   - RGB HUD
   - RGB SAD
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB5'
+  - RGB BRD
+  - RGB SPD
+  - RGB EFR
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - _
-  - +
+  - '&bl BL_OFF'
+  - '&bl BL_DEC'
   - '{'
   - '}'
   - OUT USB
