@@ -63,7 +63,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: \, s: '|'}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: 'Alt+ $$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
@@ -76,7 +76,7 @@ layers:
   - '{'
   - _
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
   - HOME
   - PG UP
   - PG DN
