@@ -156,7 +156,7 @@ layers:
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - RGB SAI
   - {t: /, s: '?'}
-  - 7k
+  - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '-', s: _}
