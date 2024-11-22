@@ -1,3 +1,4 @@
+/* spellchecker:disable */
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
@@ -17,13 +18,6 @@
 
 / {
     behaviors {
-        lbrc_lsft_caps: lbrc_lsft_caps {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LBRC_LSFT_CAPS";
-            #binding-cells = <0>;
-            bindings = <&mt LEFT_SHIFT LBRC>, <&caps_word>;
-        };
-
         lclk_rclk: lclk_rclk {
             compatible = "zmk,behavior-tap-dance";
             label = "LCLK_RCLK";
@@ -61,83 +55,37 @@
 
     keymap {
         compatible = "zmk,keymap";
-
         layer0 {
-            display-name = "QWERTY";
-
-            // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |                ↑    |  Y  |  U   |  I  |  O  |  P  | BKSP |      &kp UP_ARROW 
-            // | SHIFT |  A  |  S  |  D  |  F  |  G  |               ↓    |  H  |  J   |  K  |  L  |  ;  |  '   | 
-            // | CTRL |  Z  |  X  |  C  |  V  |  B  |                ←    |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |                →    | ENT | RSE  | ALT |
-            //                                                      enter
-
-            bindings = <
+            display-name = "QWERTY"; bindings = <
 &kp ESC         &kp Q  &kp W       &kp E          &kp R       &kp T          &kp UP_ARROW     &kp Y     &kp U        &kp I           &kp O    &kp P     &kp BSPC
 &mt LCTRL TAB   &kp A  &kp S       &kp D          &kp F       &kp G          &kp DOWN_ARROW   &kp H     &kp J        &kp K           &kp L    &kp SEMI  &mt RCTRL ENTER
 &mt LSHFT LBRC  &kp Z  &kp X       &kp C          &kp V       &kp B          &kp LEFT_ARROW   &kp N     &kp M        &kp COMMA       &kp DOT  &kp FSLH  &mt RSHFT SQT
                        &kp C_MUTE  &mt LALT LBKT  &lt 1 LPAR  &lt 3 SPACE    &kp RIGHT_ARROW  &kp LGUI  &lt 2 RIGHT  &mt RALT UNDER
-                                                                             &none
-            >;
-
-            label = "QWERTY";
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+                                                                             &none >; sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
-
         layer1 {
-            display-name = "NUMBER";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
+            display-name = "NUMBER"; bindings = <
 &kp GRAVE        &kp N1    &kp N2        &kp N3     &kp N4     &kp N5     &kp PG_UP  &kp N6    &kp N7        &kp N8            &kp N9        &kp N0    &kp BSLH
 &mt LCTRL BSPC   &kp LEFT  &kp UP_ARROW  &kp DOWN   &kp RIGHT  &kp DEL    &kp PG_DN  &kp LBKT  &kp NUMBER_4  &kp N5            &kp NUMBER_6  &kp PLUS  &mt RCTRL RBKT
 &mt LSHFT ENTER  &kp HOME  &kp PG_UP     &kp PG_DN  &kp END    &kp INS    &kp HOME   &kp LBRC  &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3  &kp DOT   &mt RSHFT RBRC
                            &trans        &trans     &trans     &trans     &kp END    &trans    &kp EQUAL     &mt RIGHT_ALT N0
-                                                                          &trans
-            >;
-
-            label = "NUM_CS";
-            sensor-bindings = <&scroll_encoder>;
+                                                                          &trans >; sensor-bindings = <&scroll_encoder>;
         };
-
         layer2 {
-            display-name = "FUNC";
-            bindings = <
+            display-name = "FUNC"; bindings = <
 &kp TILDE              &kp EXCL   &kp AT     &kp POUND  &kp DLLR   &kp PRCNT    &trans  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp PIPE
 &mt LCTRL LA(F4)       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC   &kp DQT      &trans  &kp F1     &kp F2    &kp F3     &kp F4    &kp F5    &mt RCTRL F6
 &mt LSHFT PRINTSCREEN  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &kp SQT      &trans  &kp F7     &kp F8    &kp F9     &kp F10   &kp F11   &mt LSHFT F12
                                   &trans     &trans     &kp EQUAL  &trans       &trans  &trans     &trans    &trans
-                                                                                &trans
-            >;
-
-            label = "SYM_FN";
-            sensor-bindings = <&scroll_encoder>;
+                                                                                &trans >; sensor-bindings = <&scroll_encoder>;
         };
-
         layer3 {
-            display-name = "CONFIG";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            bindings = <
+            display-name = "CONFIG"; bindings = <
 &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &mmv MOVE_UP     &bl BL_TOG  &bl BL_CYCLE  &ext_power EP_TOG  &bt BT_CLR_ALL  &out OUT_TOG  &soft_off
 &rgb_ug RGB_ON   &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF    &mmv MOVE_DOWN   &bl BL_ON   &bl BL_INC    &ext_power EP_ON   &bt BT_NXT      &out OUT_BLE  &sys_reset
 &rgb_ug RGB_OFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR    &mmv MOVE_LEFT   &bl BL_OFF  &bl BL_DEC    &ext_power EP_OFF  &bt BT_PRV      &out OUT_USB  &bootloader
                                   &bootloader      &trans           &trans           &trans             &mmv MOVE_RIGHT  &lclk_rclk  &trans        &trans
-                                                                                                        &mkp LCLK
-            >;
-
-            label = "CFG_MS";
-            sensor-bindings = <&rgb_encoder>;
+                                                                                                        &mkp LCLK >; sensor-bindings = <&rgb_encoder>;
         };
     };
 };
