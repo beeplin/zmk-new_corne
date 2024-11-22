@@ -32,7 +32,7 @@
         };
 
         msc {
-            acceleration-exponent = <1>;      // 0
+            acceleration-exponent = <1>;      // 0      
             time-to-max-speed-ms = <400>;      // 500
             delay-ms = <0>;                   // 10
         };
@@ -51,6 +51,10 @@
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
         tap-ms = <30>;
+    };
+
+    &lt {
+        flavor = "hold-preferred";
     };
 
     keymap {
