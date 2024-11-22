@@ -16,11 +16,13 @@
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
 
+&lt {
+    flavor = "hold-preferred";
+};
+
 / {
     behaviors {
-        &lt {
-            flavor = "hold-preferred";
-        };
+
     
         lclk_rclk: lclk_rclk {
             compatible = "zmk,behavior-tap-dance";
