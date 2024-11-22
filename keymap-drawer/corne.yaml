@@ -41,9 +41,9 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
-  - _
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: N-C-S}
-  - {t: '$$mdi:keyboard-return$$', h: F-M-N}
+  - {t: _, h: F-M-N}
   - $$mdi:arrow-right-bold$$
   - LGUI
   - {t: '$$mdi:keyboard-space$$', h: CONFIG}
@@ -63,7 +63,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: \, s: '|'}
-  - {t: 'Alt+ $$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
@@ -76,7 +76,7 @@ layers:
   - '{'
   - _
   - {t: '''', s: '"'}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - HOME
   - PG UP
   - PG DN
