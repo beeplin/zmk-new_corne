@@ -119,12 +119,12 @@ layers:
   - (
   - +
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '=', s: +}
+  - '"'
   - )
   - {t: ']', s: '}'}
   - '}'
+  - ':'
   - {t: '''', s: '"'}
-  - '"'
   - {t: PRINTSCREEN, h: '$$mdi:apple-keyboard-shift$$'}
   - Ctl+ Z
   - Ctl+ X
@@ -134,9 +134,9 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '&lclk_rclk'
   - '|'
-  - _
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - <
+  - '>'
+  - '?'
   - {t: APP, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -156,7 +156,7 @@ layers:
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - RGB SAI
   - {t: /, s: '?'}
-  - {t: '7', s: '&'}
+  - 7k
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '-', s: _}
