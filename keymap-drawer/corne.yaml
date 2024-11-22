@@ -42,14 +42,14 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-space$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-space$$', h: NUMSYM}
   - {t: '$$mdi:keyboard-space$$', h: CONFIG}
   - $$mdi:arrow-right-bold$$
   - LGUI
   - {t: '$$mdi:keyboard-space$$', h: FUNC}
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  NUMBER:
+  NUMSYM:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
