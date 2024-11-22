@@ -83,16 +83,17 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
         layer1 {
-            display-name = "N-C-S"; 
+            display-name = "NUMBER"; 
             bindings = <
 &kp GRAVE        &kp N1    &kp N2     &kp N3     &kp N4     &kp N5   &trans  &kp N6     &kp N7     &kp N8    &kp N9    &kp N0     &kp BSLH
 &mt LCTRL BSPC   &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp DEL  &trans  &kp EQUAL  &kp LPAR   &kp LBKT  &kp LBRC  &kp UNDER  &kp SQT
 &mt LSHFT ENTER  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp INS  &trans  &kp MINUS  &kp RPAR   &kp RBKT  &kp RBRC  &kp PLUS   &kp RSHFT 
-&trans                                &trans     &trans     &trans   &trans  &trans     &kp MINUS  &trans                         &trans >;
+&trans                                &trans     &trans     &trans   &trans  &trans     &kp PIPE   &trans                         &trans >;
             sensor-bindings = <&scroll_encoder>;
         };
         layer2 {
-            
+            display-name = "FUNCTION"; 
+            bindings = <     
 &kp LA(F4)             &kp F9  &kp F10  &kp F11  &kp F12  &kp LC(N0)     &mmv MOVE_UP     &kp FSLH    &kp N7  &kp N8  &kp N9  &kp MINUS  &kp K_SLEEP
 &mt LCTRL CAPS         &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(EQUAL)  &mmv MOVE_DOWN   &kp ASTRK   &kp N4  &kp N5  &kp N6  &kp PLUS   &kp ENTER
 &mt LSHFT PRINTSCREEN  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(MINUS)  &mmv MOVE_LEFT   &kp N0      &kp N1  &kp N2  &kp N3  &kp DOT    &mt RSHFT K_APP
