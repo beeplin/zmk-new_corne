@@ -126,15 +126,15 @@ layers:
   - {t: '''', s: '"'}
   - '"'
   - {t: PRINTSCREEN, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - _
+  - Ctl+ Z
+  - Ctl+ X
+  - Ctl+ C
+  - Ctl+ V
   - {t: '-', s: _}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '&lclk_rclk'
   - '|'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - _
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: APP, h: '$$mdi:apple-keyboard-shift$$'}
