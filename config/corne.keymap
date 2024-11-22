@@ -95,7 +95,7 @@
             display-name = "FUNCTION"; 
             bindings = <     
 &kp LA(F4)             &kp F9  &kp F10  &kp F11  &kp F12  &kp LC(N0)     &mmv MOVE_UP     &kp FSLH    &kp N7  &kp N8  &kp N9  &kp MINUS  &kp K_SLEEP
-&mt LCTRL CAPS         &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(EQUAL)  &mmv MOVE_DOWN   &kp ASTRK   &kp N4  &kp N5  &kp N6  &kp PLUS   &kp ENTER
+&mt LCTRL &caps_word   &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(EQUAL)  &mmv MOVE_DOWN   &kp ASTRK   &kp N4  &kp N5  &kp N6  &kp PLUS   &kp ENTER
 &mt LSHFT PRINTSCREEN  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(MINUS)  &mmv MOVE_LEFT   &kp N0      &kp N1  &kp N2  &kp N3  &kp DOT    &mt RSHFT K_APP
 &trans                                  &trans   &trans   &trans         &mmv MOVE_RIGHT  &lclk_rclk  &kp N0  &trans                     &mkp LCLK >;
             sensor-bindings = <&scroll_encoder>;
