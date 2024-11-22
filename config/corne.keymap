@@ -92,10 +92,9 @@
             sensor-bindings = <&scroll_encoder>;
         };
         layer2 {
-            display-name = "F-M-N"; 
-            bindings = <
+            
 &kp LA(F4)             &kp F9  &kp F10  &kp F11  &kp F12  &kp LC(N0)     &mmv MOVE_UP     &kp FSLH    &kp N7  &kp N8  &kp N9  &kp MINUS  &kp K_SLEEP
-&mt LCTRL CAPS         &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(PLUS)   &mmv MOVE_DOWN   &kp ASTRK   &kp N4  &kp N5  &kp N6  &kp PLUS   &kp ENTER
+&mt LCTRL CAPS         &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(EQUAL)  &mmv MOVE_DOWN   &kp ASTRK   &kp N4  &kp N5  &kp N6  &kp PLUS   &kp ENTER
 &mt LSHFT PRINTSCREEN  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(MINUS)  &mmv MOVE_LEFT   &kp N0      &kp N1  &kp N2  &kp N3  &kp DOT    &mt RSHFT K_APP
 &trans                                  &trans   &trans   &trans         &mmv MOVE_RIGHT  &lclk_rclk  &kp N0  &trans                     &mkp LCLK >;
             sensor-bindings = <&scroll_encoder>;
@@ -103,13 +102,13 @@
         layer3 {
             display-name = "CONFIG"; 
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &rgb_ug RGB_SAI  &bl BL_TOG  &bl BL_CYCLE  &ext_power EP_TOG  &bt BT_CLR_ALL  &out OUT_TOG  &soft_off
-&rgb_ug RGB_ON   &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &rgb_ug RGB_SAD  &bl BL_ON   &bl BL_INC    &ext_power EP_ON   &bt BT_NXT      &out OUT_BLE  &sys_reset
-&rgb_ug RGB_OFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &bl BL_OFF  &bl BL_DEC    &ext_power EP_OFF  &bt BT_PRV      &out OUT_USB  &bootloader
-&bootloader                                        &kp LT           &kp EQUAL        &kp GT           &rgb_ug RGB_HUI  &trans      &trans        &trans                                           &bootloader>;
+&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &rgb_ug RGB_SAI  &none   &none   &none   &none  &none  &none 
+&out OUT_TOG     &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &rgb_ug RGB_SAD  &none   &none   &none   &none  &none  &none 
+&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &none   &none   &none   &none  &none  &none 
+&bootloader                                        &kp LT           &kp EQUAL        &kp GT           &rgb_ug RGB_HUI  &trans  &trans  &trans                &bootloader>;
             sensor-bindings = <&rgb_encoder>;
         };
-    };
+    };  
 };
 
 // &kp TILDE              &kp EXCL   &kp AT     &kp POUND  &kp DLLR   &kp PRCNT    &trans  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp PIPE
