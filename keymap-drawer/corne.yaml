@@ -48,7 +48,7 @@ layers:
   - LGUI
   - {t: '$$mdi:keyboard-space$$', h: CONFIG}
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   N-C-S:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
@@ -146,7 +146,7 @@ layers:
   - '&lclk_rclk'
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-left-click-outline$$
   CONFIG:
   - $$mdi:bluetooth-off$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
