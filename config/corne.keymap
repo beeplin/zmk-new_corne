@@ -34,6 +34,18 @@
     //     };
     // };
 
+    macros {
+        // Windows sleep key
+        win_sleep: win_sleep {
+            wait-ms = <50>;
+            tap-ms = <5>;
+            compatible = "zmk,behavior-macro";
+            label = "WIN_SLEEP";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X) &kp U &kp S>;
+        };
+    };
+
     behaviors {
         lclk_rclk: lclk_rclk {
             compatible = "zmk,behavior-tap-dance";
@@ -92,7 +104,7 @@
         };
         layer2 {
             display-name = "FN NUM"; 
-            bindings = <     
+            bindings = <        
 &kp LA(F4)             &kp F9  &kp F10  &kp F11  &kp F12  &kp LC(N0)     &mmv MOVE_UP     &kp FSLH    &kp N7  &kp N8  &kp N9  &kp MINUS  &kp C_SLEEP
 &mt LCTRL CAPS         &kp F5  &kp F6   &kp F7   &kp F8   &kp LC(EQUAL)  &mmv MOVE_DOWN   &kp ASTRK   &kp N4  &kp N5  &kp N6  &kp PLUS   &kp ENTER
 &mt LSHFT PRINTSCREEN  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(MINUS)  &mmv MOVE_LEFT   &lclk_rclk  &kp N1  &kp N2  &kp N3  &kp DOT    &mt RSHFT K_APP
@@ -102,10 +114,10 @@
         layer3 {
             display-name = "CONFIG"; 
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &rgb_ug RGB_SAI  &none   &none   &none   &none  &none  &none 
-&out OUT_TOG     &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &rgb_ug RGB_SAD  &none   &none   &none   &none  &none  &none 
-&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &none   &none   &none   &none  &none  &none 
-&bootloader                                        &kp LT           &kp EQUAL        &kp GT           &rgb_ug RGB_HUI  &trans  &trans  &trans                &bootloader>;
+&bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &rgb_ug RGB_SAI  &kp FSLH   &kp N7  &kp N8  &kp N9  &kp MINUS  &win_sleep
+&out OUT_TOG     &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &rgb_ug RGB_SAD  &kp ASTRK  &kp N4  &kp N5  &kp N6  &kp PLUS   &kp ENTER
+&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &kp N0     &kp N1  &kp N2  &kp N3  &kp DOT    &mt RSHFT K_APP
+&bootloader                                        &kp LT           &kp EQUAL        &kp GT           &rgb_ug RGB_HUI  &trans     &trans  &kp N0                     &bootloader>;
             sensor-bindings = <&rgb_encoder>;
         };
     };  
