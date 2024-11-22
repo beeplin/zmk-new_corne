@@ -85,10 +85,10 @@
         layer1 {
             display-name = "N-C-S"; 
             bindings = <
-&kp GRAVE       &kp N1    &kp N2     &kp N3     &kp N4     &kp N5   &trans  &kp N6     &kp N7     &kp N8    &kp N9    &kp N0     &kp BSLH
-&mt LCTRL BSPC  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp DEL  &trans  &kp EQUAL  &kp LPAR   &kp LBKT  &kp LBRC  &kp UNDER  &kp SQT
-&kp LSHFT       &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp INS  &trans  &kp MINUS  &kp RPAR   &kp RBKT  &kp RBRC  &kp PLUS   &kp RSHFT 
-&trans                               &trans     &trans     &trans   &trans  &trans     &kp EQUAL  &trans                         &trans >;
+&kp GRAVE          &kp N1    &kp N2     &kp N3     &kp N4     &kp N5   &trans  &kp N6     &kp N7     &kp N8    &kp N9    &kp N0     &kp BSLH
+&mt LCTRL LA(TAB)  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp DEL  &trans  &kp EQUAL  &kp LPAR   &kp LBKT  &kp LBRC  &kp UNDER  &kp SQT
+&mt LSHFT BSPC     &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp INS  &trans  &kp MINUS  &kp RPAR   &kp RBKT  &kp RBRC  &kp PLUS   &kp RSHFT 
+&trans                                  &trans     &trans     &trans   &trans  &trans     &kp EQUAL  &trans                         &trans >;
             sensor-bindings = <&scroll_encoder>;
         };
         layer2 {
