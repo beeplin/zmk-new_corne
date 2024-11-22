@@ -107,7 +107,7 @@
             bindings = <        
 &kp TILDE              &kp EXCL   &kp AT    &kp POUND  &kp DLLR   &kp PRCNT  &mmv MOVE_UP     &kp CARET   &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSLH 
 &mt LCTRL CAPS         &kp GRAVE  &kp LBRC  &kp LBKT   &kp LPAR   &kp PLUS   &mmv MOVE_DOWN   &kp EQUAL   &kp RPAR  &kp RBKT   &kp RBRC  &kp SQT   &kp DQT
-&mt LSHFT PRINTSCREEN  &none      &none     &none      &kp UNDER  &kp MINUS  &mmv MOVE_LEFT   &lclk_rclk  &kp PIPE  &none      &none     &none     &mt RSHFT K_APP
+&mt LSHFT PRINTSCREEN  &kp LC(Z)  &kp LC(X) &kp LC(C)  &kp LC(V)  &kp MINUS  &mmv MOVE_LEFT   &lclk_rclk  &kp PIPE  &kp UNDER  &none     &none     &mt RSHFT K_APP
 &trans                                      &trans     &trans     &trans     &mmv MOVE_RIGHT  &trans      &kp PLUS  &trans                         &mkp LCLK >;
             sensor-bindings = <&scroll_encoder>;
         };
