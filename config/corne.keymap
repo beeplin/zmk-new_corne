@@ -70,7 +70,6 @@
         tap-ms = <30>;
     };
 
-addwadwwwwadsdwdasdwwadwwsdfasddawwwwwwwww
     keymap {
         compatible = "zmk,keymap";
         layer0 {
