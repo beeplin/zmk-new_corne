@@ -41,7 +41,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-option$$
+  - _
   - {t: '$$mdi:keyboard-space$$', h: N-C-S}
   - {t: '$$mdi:keyboard-return$$', h: F-M-N}
   - $$mdi:arrow-right-bold$$
