@@ -41,16 +41,16 @@ layers:
   - {t: /, s: '?'}
   - {t: \, s: '|'}
   - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-option$$
+  - {t: _, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:keyboard-space$$', h: SUPER}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:arrow-right-bold$$
-  - {t: '-', s: _}
+  - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
   - {t: '[', h: EXTRA, s: '{'}
-  - {t: ']', s: '}'}
+  - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   - LGUI
   SUPER:
-  - Alt+ $$mdi:keyboard-space$$
+  - $$mdi:alpha-w-box$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -62,7 +62,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - $$mdi:alpha-w-box$$
+  - '&win_sleep'
   - {t: HOME, h: '$$mdi:apple-keyboard-shift$$'}
   - PG UP
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -76,7 +76,7 @@ layers:
   - F10
   - F11
   - {t: F12, h: '$$mdi:apple-keyboard-shift$$'}
-  - Ctl+ $$mdi:keyboard-space$$
+  - PRINTSCREEN
   - PG DN
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -89,14 +89,14 @@ layers:
   - F4
   - F5
   - F6
-  - PRINTSCREEN
+  - APP
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-right$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - (
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   EXTRA:
   - $$mdi:bluetooth-off$$
@@ -111,7 +111,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '-', s: _}
-  - '&win_sleep'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - RGB HUI
   - RGB SAI
@@ -137,11 +137,11 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: ., s: '>'}
-  - APP
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
-  - {t: 'Alt+ $$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
   - )
-  - {t: 'Ctl+ $$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
