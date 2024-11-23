@@ -26,7 +26,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '''', s: '"'}
   - {t: '`', h: '$$mdi:apple-keyboard-shift$$', s: '~'}
   - Z
   - X
@@ -39,7 +39,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
+  - {t: \, h: '$$mdi:apple-keyboard-shift$$', s: '|'}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: NUMBER}
@@ -62,7 +62,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - '&win_sleep'
+  - $$mdi:alpha-w-box$$
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
@@ -76,7 +76,7 @@ layers:
   - F10
   - F11
   - F12
-  - $$mdi:apple-keyboard-shift$$
+  - '&mt LSHFT'
   - HOME
   - PG UP
   - PG DN
@@ -94,7 +94,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-right$$
-  - $$mdi:alpha-w-box$$
+  - '|'
   - _
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -160,7 +160,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '-', s: _}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&win_sleep'
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - RGB HUI
   - RGB SAI
