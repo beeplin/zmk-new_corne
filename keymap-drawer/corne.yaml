@@ -141,7 +141,7 @@ layers:
   - $$mdi:progress-download$$
   - ^
   - )
-  - $
+  - {t: 'Ctl+ $$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
