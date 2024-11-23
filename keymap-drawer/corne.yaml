@@ -89,7 +89,7 @@ layers:
   - F4
   - F5
   - F6
-  - APP
+  - $$mdi:volume-off$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
