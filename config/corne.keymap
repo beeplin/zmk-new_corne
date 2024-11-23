@@ -108,7 +108,7 @@
 &out OUT_TOG     &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &mmv MOVE_DOWN   &kp ASTRK        &kp N4           &kp N5           &kp N6           &kp PLUS         &kp ENTER
 &rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &mmv MOVE_LEFT   &lclk_rclk       &kp N1           &kp N2           &kp N3           &kp DOT          &kp K_APP
 &bootloader                                        &kp CARET        &kp RPAR         &kp DLLR         &mmv MOVE_RIGHT  &trans           &trans           &kp N0                                             &bootloader >;
-            sensor-bindings = <&rgb_encoder>;S
+            sensor-bindings = <&rgb_encoder>;
         };
     };  
 };
