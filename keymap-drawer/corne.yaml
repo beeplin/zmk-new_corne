@@ -109,8 +109,8 @@ layers:
   - ^
   - '&'
   - '*'
-  - (
-  - )
+  - _
+  - {t: '=', s: +}
   - {t: \, s: '|'}
   - {t: PRINTSCREEN, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '`', s: '~'}
