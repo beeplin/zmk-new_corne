@@ -110,7 +110,7 @@
         layer2 {
             display-name = "SYMBOL"; 
             bindings = <        
-&kp TILDE        &kp EXCL     &kp AT       &kp POUND    &kp DLLR     &kp PRCNT    &mmv MOVE_UP     &kp CARET    &kp AMPS     &kp ASTRK    &kp LPAR     &kp RPAR     &kp BSLH 
+&kp TILDE        &kp EXCL     &kp AT       &kp POUND    &kp DLLR     &kp PRCNT    &mmv MOVE_UP     &kp CARET    &kp AMPS     &kp ASTRK    &kp UNDER    &kp EQUAL    &kp BSLH 
 &mt LCTRL PSCR   &kp GRAVE    &kp LBRC     &kp LBKT     &kp LPAR     &kp PLUS     &mmv MOVE_DOWN   &kp DQT      &kp RPAR     &kp RBKT     &kp RBRC     &kp COLON    &kp SQT
 &kp LSHFT        &kp LC(Z)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &kp MINUS    &mmv MOVE_LEFT   &lclk_rclk   &kp PIPE     &kp LT       &kp GT       &kp QMARK    &mt RSHFT K_APP
 &trans                                     &trans       &trans       &trans       &mmv MOVE_RIGHT  &trans       &kp PLUS     &trans                                 &trans >;
