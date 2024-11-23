@@ -11,10 +11,13 @@
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 800  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20   // 10
+
 #define U_MS_U &mmv MOVE_UP
 #define U_MS_D &mmv MOVE_DOWN
 #define U_MS_L &mmv MOVE_LEFT
 #define U_MS_R &mmv MOVE_RIGHT
+
+#define PSCR PRINTSCREEN
 
 &lt {
     flavor = "hold-preferred";
@@ -87,19 +90,19 @@
         layer0 {
             display-name = "QWERTY";
             bindings = <
-&kp TAB        &kp Q  &kp W       &kp E     &kp R        &kp T        &kp UP     &kp Y     &kp U        &kp I      &kp O    &kp P     &kp BSPC
-&mt LCTRL ESC  &kp A  &kp S       &kp D     &kp F        &kp G        &kp DOWN   &kp H     &kp J        &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LSHFT      &kp Z  &kp X       &kp C     &kp V        &kp B        &kp LEFT   &kp N     &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-&kp C_MUTE                        &kp LALT  &lt 1 SPACE  &lt 2 UNDER  &kp RIGHT  &kp LGUI  &lt 3 SPACE  &kp RALT                      &kp ENTER >;
+&kp TAB        &kp Q  &kp W       &kp E     &kp R        &kp T        &kp UP     &kp Y        &kp U      &kp I      &kp O    &kp P     &kp BSPC
+&mt LCTRL ESC  &kp A  &kp S       &kp D     &kp F        &kp G        &kp DOWN   &kp H        &kp J      &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LSHFT      &kp Z  &kp X       &kp C     &kp V        &kp B        &kp LEFT   &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+&kp C_MUTE                        &kp LALT  &lt 1 SPACE  &lt 2 ENTER  &kp RIGHT  &lt 3 UNDER  &kp SPACE  &kp RALT                      &kp LGUI >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
         layer1 {
             display-name = "NUMBER"; 
             bindings = <
-&kp LA(F4)       &kp N1    &kp N2     &kp N3     &kp N4     &kp N5   &msc SCRL_UP     &kp N6  &kp N7     &kp N8  &kp N9   &kp N0   &win_sleep
-&mt LCTRL BSPC   &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp DEL  &msc SCRL_DOWN   &kp F7  &kp F8     &kp F9  &kp F10  &kp F11  &kp F12 
-&mt LSHFT ENTER  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp INS  &msc SCRL_LEFT   &kp F1  &kp F2     &kp F3  &kp F4   &kp F5   &mt RSHFT F6
-&trans                                &trans     &trans     &trans   &msc SCRL_RIGHT  &trans  &kp MINUS  &trans                    &mkp LCLK  >;
+&kp LA(F4)      &kp N1    &kp N2     &kp N3     &kp N4     &kp N5   &msc SCRL_UP     &kp N6  &kp N7     &kp N8  &kp N9   &kp N0   &win_sleep
+&mt LCTRL BSPC  &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &kp DEL  &msc SCRL_DOWN   &kp F7  &kp F8     &kp F9  &kp F10  &kp F11  &kp F12 
+&mt LSHFT CAPS  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END    &kp INS  &msc SCRL_LEFT   &kp F1  &kp F2     &kp F3  &kp F4   &kp F5   &mt RSHFT F6
+&trans                                &trans     &trans     &trans   &msc SCRL_RIGHT  &trans  &kp MINUS  &trans                    &mkp trans >;
             sensor-bindings = <&scroll_encoder>;
         };
         layer2 {
@@ -107,8 +110,8 @@
             bindings = <        
 &kp TILDE              &kp EXCL   &kp AT    &kp POUND  &kp DLLR   &kp PRCNT  &mmv MOVE_UP     &kp CARET   &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR   &kp BSLH 
 &mt LCTRL CAPS         &kp GRAVE  &kp LBRC  &kp LBKT   &kp LPAR   &kp PLUS   &mmv MOVE_DOWN   &kp DQT     &kp RPAR  &kp RBKT   &kp RBRC  &kp COLON  &kp SQT
-&mt LSHFT PRINTSCREEN  &kp LC(Z)  &kp LC(X) &kp LC(C)  &kp LC(V)  &kp MINUS  &mmv MOVE_LEFT   &lclk_rclk  &kp PIPE  &kp LT     &kp GT    &kp QMARK  &mt RSHFT K_APP
-&trans                                      &trans     &trans     &trans     &mmv MOVE_RIGHT  &trans      &kp PLUS  &trans                          &mkp LCLK >;
+&mt LSHFT PSCR  &kp LC(Z)  &kp LC(X) &kp LC(C)  &kp LC(V)  &kp MINUS  &mmv MOVE_LEFT   &lclk_rclk  &kp PIPE  &kp LT     &kp GT    &kp QMARK  &mt RSHFT K_APP
+&trans                                      &trans     &trans     &trans     &mmv MOVE_RIGHT  &trans      &kp PLUS  &trans                          &mkp trans >;
             sensor-bindings = <&scroll_encoder>;
         };
         layer3 {
