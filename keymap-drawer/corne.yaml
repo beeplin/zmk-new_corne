@@ -63,8 +63,8 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - $$mdi:alpha-w-box$$
-  - {t: PRINTSCREEN, h: '$$mdi:apple-keyboard-shift$$'}
-  - HOME
+  - {t: HOME, h: '$$mdi:apple-keyboard-shift$$'}
+  - END
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:arrow-up-bold$$
   - $$mdi:backspace-reverse-outline$$
@@ -76,8 +76,8 @@ layers:
   - F10
   - F11
   - {t: F12, h: '$$mdi:apple-keyboard-shift$$'}
+  - PRINTSCREEN
   - INS
-  - END
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
