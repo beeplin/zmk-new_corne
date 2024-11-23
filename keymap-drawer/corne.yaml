@@ -64,10 +64,10 @@ layers:
   - {t: '0', s: )}
   - $$mdi:alpha-w-box$$
   - {t: HOME, h: '$$mdi:apple-keyboard-shift$$'}
+  - PG UP
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:arrow-up-bold$$
   - $$mdi:backspace-reverse-outline$$
-  - PG UP
   - END
   - $$mdi:pan-down$$
   - F7
@@ -77,10 +77,10 @@ layers:
   - F11
   - {t: F12, h: '$$mdi:apple-keyboard-shift$$'}
   - PRINTSCREEN
+  - PG DN
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - PG DN
   - INS
   - $$mdi:pan-left$$
   - F1
