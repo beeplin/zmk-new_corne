@@ -154,7 +154,7 @@ layers:
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
-  - RGB SAI
+  - '&ug SAI'
   - {t: /, s: '?'}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -162,25 +162,25 @@ layers:
   - {t: '-', s: _}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
-  - RGB HUI
-  - RGB SAI
-  - RGB BRI
-  - RGB SPI
-  - RGB EFF
-  - RGB SAD
+  - '&ug HUI'
+  - '&ug SAI'
+  - '&ug BRI'
+  - '&ug SPI'
+  - '&ug EFF'
+  - '&ug SAD'
   - '*'
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - +
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - RGB TOG
-  - RGB HUD
-  - RGB SAD
-  - RGB BRD
-  - RGB SPD
-  - RGB EFR
-  - RGB HUD
+  - '&ug TOG'
+  - '&ug HUD'
+  - '&ug SAD'
+  - '&ug BRD'
+  - '&ug SPD'
+  - '&ug EFR'
+  - '&ug HUD'
   - {t: '0', s: )}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -191,7 +191,7 @@ layers:
   - <
   - {t: '=', s: +}
   - '>'
-  - RGB HUI
+  - '&ug HUI'
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
