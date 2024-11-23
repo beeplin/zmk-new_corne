@@ -50,7 +50,7 @@ layers:
   - {t: ']', s: '}'}
   - LGUI
   SUPER:
-  - Alt+ F4
+  - Alt+ $$mdi:keyboard-space$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -76,7 +76,7 @@ layers:
   - F10
   - F11
   - {t: F12, h: '$$mdi:apple-keyboard-shift$$'}
-  - PRINTSCREEN
+  - Ctl+ $$mdi:keyboard-space$$
   - PG DN
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -89,7 +89,7 @@ layers:
   - F4
   - F5
   - F6
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
