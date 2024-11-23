@@ -76,7 +76,7 @@ layers:
   - F10
   - F11
   - F12
-  - '&mt LSHFT'
+  - $$mdi:apple-keyboard-shift$$
   - HOME
   - PG UP
   - PG DN
