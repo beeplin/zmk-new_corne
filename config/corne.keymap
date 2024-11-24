@@ -61,12 +61,12 @@
             bindings = <&caps_word>, <&kp CAPS>;
         };
 
-        shift_caps: shift_caps {
-            compatible = "zmk,behavior-mod-tap";
-            label = "SHIFT_CAPS";
-            #binding-cells = <0>;
-            bindings = <&kp RSHFT>, <&caps_word>;
-        };
+        // shift_caps: shift_caps {
+        //     compatible = "zmk,behavior-mod-tap";
+        //     label = "SHIFT_CAPS";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp RSHFT>, <&caps_word>;
+        // };
 
         mmv {
             acceleration-exponent = <0>;      // 1
@@ -110,7 +110,7 @@
             display-name = "SUPER";
             bindings = <
 &kp LA(F4)       &kp N1           &kp N2           &kp N3           &kp N4           &kp N5           &msc SCRL_UP     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0           &win_sleep
-&mt LSHFT ENTER  &kp HOME         &kp BSPC         &kp UP           &kp DEL          &kp PG_UP        &msc SCRL_DOWN   &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &shift_caps
+&mt LSHFT ENTER  &kp HOME         &kp BSPC         &kp UP           &kp DEL          &kp PG_UP        &msc SCRL_DOWN   &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &caps_or_word
 &mt LGUI INS     &kp END          &kp LEFT         &kp DOWN         &kp RIGHT        &kp PG_DN        &msc SCRL_LEFT   &kp F1           &kp F2           &kp F3           &kp F4           &kp F5           &mt RGUI K_APP
 &kp C_MUTE                                         &kp PRINTSCREEN  &none            &kp PAUSE_BREAK  &msc SCRL_RIGHT  &mt RCTRL F11    &kp LPAR         &mt RALT F12                                       &kp LGUI >;
             sensor-bindings = <&scroll_encoder>;
