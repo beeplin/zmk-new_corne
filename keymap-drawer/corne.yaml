@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - {t: '=', s: +}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
   - A
   - S
@@ -26,7 +26,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: '''', h: '$$mdi:apple-keyboard-shift$$', s: '"'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '`', h: LGUI, s: '~'}
   - Z
   - X
@@ -39,18 +39,18 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: \, h: RGUI, s: '|'}
+  - {t: '''', h: RGUI, s: '"'}
   - $$mdi:volume-off$$
-  - {t: _, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: \, h: '$$mdi:apple-keyboard-option$$', s: '|'}
   - {t: '$$mdi:keyboard-space$$', h: SUPER}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
-  - $$mdi:arrow-right-bold$$
   - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
+  - $$mdi:arrow-right-bold$$
+  - {t: '=', h: '$$mdi:apple-keyboard-control$$', s: +}
   - {t: '[', h: EXTRA, s: '{'}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   - LGUI
   SUPER:
-  - '!'
+  - Alt+ F4
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -62,8 +62,8 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - F12
-  - {t: '@', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&win_sleep'
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - HOME
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:arrow-up-bold$$
@@ -75,8 +75,8 @@ layers:
   - F8
   - F9
   - F10
-  - {t: F11, h: '$$mdi:apple-keyboard-shift$$'}
-  - '%'
+  - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: INS, h: LGUI}
   - END
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -88,15 +88,15 @@ layers:
   - F3
   - F4
   - F5
-  - '&'
+  - {t: APP, h: RGUI}
   - $$mdi:volume-off$$
   - PRINTSCREEN
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - APP
+  - PAUSE BREAK
   - $$mdi:pan-right$$
-  - {t: '#', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F11, h: '$$mdi:apple-keyboard-control$$'}
   - (
-  - {t: '*', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F12, h: '$$mdi:apple-keyboard-option$$'}
   - LGUI
   EXTRA:
   - $$mdi:bluetooth-off$$
@@ -111,39 +111,39 @@ layers:
   - KP 8
   - KP 9
   - KP SUBTRACT
-  - '&win_sleep'
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - $$mdi:volume-off$$
+  - RGB TOG
+  - RGB EFR
+  - RGB BRI
   - RGB HUI
   - RGB SAI
-  - RGB BRI
   - RGB SPI
-  - RGB EFF
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - KP MULTIPLY
   - KP 4
   - KP 5
   - KP 6
   - KP PLUS
-  - '&caps_or_word'
-  - RGB TOG
+  - $$mdi:volume-high$$
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - RGB EFF
+  - RGB BRD
   - RGB HUD
   - RGB SAD
-  - RGB BRD
   - RGB SPD
-  - RGB EFR
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '&lclk_rclk'
   - KP 1
   - KP 2
   - KP 3
   - KP DOT
-  - KP ENTER
+  - $$mdi:volume-low$$
   - $$mdi:progress-download$$
-  - ^
-  - )
-  - $
+  - $$mdi:skip-previous$$
+  - PLAY PAUSE
+  - $$mdi:skip-next$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - INS
+  - SCROLLLOCK
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - KP 0
   - $$mdi:progress-download$$
