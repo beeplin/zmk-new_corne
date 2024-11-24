@@ -137,7 +137,7 @@ layers:
   - KP 2
   - KP 3
   - KP DOT
-  - KP ENTERS
+  - KP ENTER
   - $$mdi:progress-download$$
   - ^
   - )
