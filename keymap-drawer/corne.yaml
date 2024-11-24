@@ -75,7 +75,7 @@ layers:
   - F8
   - F9
   - F10
-  - {t: A, h: '$$mdi:apple-keyboard-shift$$'}
+  - '&rpi'
   - {t: INS, h: LGUI}
   - END
   - $$mdi:arrow-left-bold$$
