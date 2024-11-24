@@ -65,7 +65,7 @@
             compatible = "zmk,behavior-mod-tap";
             label = "SHIFT_CAPS";
             #binding-cells = <0>;
-            binding = <&kp RSHFT>, <&caps_or_word>;
+            binding = <&kp RSHFT>, <&caps_word>;
         };
 
         mmv {
