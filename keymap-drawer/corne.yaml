@@ -137,7 +137,7 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: ., s: '>'}
-  - $$mdi:volume-off$$
+  - $$mdi:apple-keyboard-caps$$
   - $$mdi:progress-download$$
   - ^
   - )
