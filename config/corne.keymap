@@ -96,7 +96,7 @@
             display-name = "SUPER";
             bindings = <
 &kp EXCL         &kp N1           &kp N2           &kp N3           &kp N4           &kp N5           &msc SCRL_UP     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0           &kp F12
-&mt LSHFT AT     &kp HOME         &kp BSPC         &kp UP           &kp DEL          &kp PG_UP        &msc SCRL_DOWN   &kp F7           &kp F8           &kp F9           &kp F10          &kp F11          &mt RSHFT F11 
+&mt LSHFT AT     &kp HOME         &kp BSPC         &kp UP           &kp DEL          &kp PG_UP        &msc SCRL_DOWN   &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &mt RSHFT F11 
 &kp PRCNT        &kp END          &kp LEFT         &kp DOWN         &kp RIGHT        &kp PG_DN        &msc SCRL_LEFT   &kp F1           &kp F2           &kp F3           &kp F4           &kp F5           &kp AMPS
 &kp C_MUTE                                         &kp PRINTSCREEN  &trans           &kp K_APP        &msc SCRL_RIGHT  &mt RCTRL POUND  &kp LPAR         &mt RALT ASTRK                                     &kp LGUI >;
             sensor-bindings = <&scroll_encoder>;
