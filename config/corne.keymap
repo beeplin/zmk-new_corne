@@ -19,11 +19,11 @@
 
 &lt {
     flavor = "hold-preferred";
-    tapping-term-ms = <150>;
+    // tapping-term-ms = <150>;
 };
 
 &mt {
-    tapping-term-ms = <150>;
+    // tapping-term-ms = <150>;
 };
 
 / {
@@ -52,6 +52,13 @@
             label = "LCLK_RCLK";
             #binding-cells = <0>;
             bindings = <&mkp LCLK>, <&mkp RCLK>;
+        };
+
+        caps_or_word: caps_or_word {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CAPS_OR_WORD";
+            #binding-cells = <0>;
+            bindings = <&caps_word>, <&kp CAPS>;
         };
 
         mmv {
@@ -105,10 +112,11 @@
             display-name = "EXTRA";
             bindings = <
 &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &mmv MOVE_UP     &kp KP_DIVIDE    &kp KP_N7        &kp KP_N8        &kp KP_N9        &kp KP_SUBTRACT  &win_sleep
-&out OUT_TOG     &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &mmv MOVE_DOWN   &kp KP_MULTIPLY  &kp KP_N4        &kp KP_N5        &kp KP_N6        &kp KP_PLUS      &caps_word
-&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &mmv MOVE_LEFT   &lclk_rclk       &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_DOT       &kp CAPS
+&out OUT_TOG     &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &rgb_ug RGB_EFF  &mmv MOVE_DOWN   &kp KP_MULTIPLY  &kp KP_N4        &kp KP_N5        &kp KP_N6        &kp KP_PLUS      &caps_or_word
+&rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &rgb_ug RGB_EFR  &mmv MOVE_LEFT   &lclk_rclk       &kp KP_N1        &kp KP_N2        &kp KP_N3        &kp KP_DOT       &kp KP_ENTERS
 &bootloader                                        &kp CARET        &kp RPAR         &kp DLLR         &mmv MOVE_RIGHT  &kp INS          &none            &kp KP_N0                                          &bootloader >;
             sensor-bindings = <&rgb_encoder>;
         };
     };  
 };
+1546237890-+*/7//*/
