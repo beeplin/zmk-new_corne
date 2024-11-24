@@ -42,11 +42,11 @@ layers:
   - {t: \, h: RGUI, s: '|'}
   - $$mdi:volume-off$$
   - {t: _, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:keyboard-space$$', h: '1'}
+  - {t: '$$mdi:keyboard-space$$', h: SUPER}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:arrow-right-bold$$
   - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
-  - {t: '[', h: '2', s: '{'}
+  - {t: '[', h: EXTRA, s: '{'}
   - {t: ']', h: '$$mdi:apple-keyboard-option$$', s: '}'}
   - LGUI
   SUPER:
@@ -91,7 +91,7 @@ layers:
   - '&'
   - $$mdi:volume-off$$
   - PRINTSCREEN
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - APP
   - $$mdi:pan-right$$
   - {t: '#', h: '$$mdi:apple-keyboard-control$$'}
@@ -144,6 +144,6 @@ layers:
   - $
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - INS
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '0', s: )}
   - $$mdi:progress-download$$
