@@ -91,7 +91,7 @@ layers:
   - '&'
   - $$mdi:volume-off$$
   - PRINTSCREEN
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {type: held}
   - APP
   - $$mdi:pan-right$$
   - {t: '#', h: '$$mdi:apple-keyboard-control$$'}
@@ -144,6 +144,6 @@ layers:
   - $
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - INS
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {type: held}
   - {t: '0', s: )}
   - $$mdi:progress-download$$
