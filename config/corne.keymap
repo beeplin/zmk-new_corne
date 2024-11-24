@@ -61,13 +61,24 @@
             bindings = <&caps_word>, <&kp CAPS>;
         };
 
-        shift_caps: shift_caps {
-            compatible = "zmk,behavior-hold-tap";
-            flavor = "hold-preferred";
-            label = "SHIFT_CAPS";
-            #binding-cells = <0>;
-            bindings = <&kp RSHFT>, <&kp A>;
-        };
+        shift_caps: require_prior_idle {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <0>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <125>;
+    bindings = <&kp RSHFT>, <&kp A>;
+};
+
+
+        // shift_caps: shift_caps {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     flavor = "hold-preferred";
+        //     label = "SHIFT_CAPS";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp RSHFT>, <&kp A>;
+        // };
 
         mmv {
             acceleration-exponent = <0>;      // 1
