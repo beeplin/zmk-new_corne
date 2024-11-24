@@ -76,7 +76,7 @@ layers:
   - F10
   - F11
   - {t: F11, h: '$$mdi:apple-keyboard-shift$$'}
-  - PRC
+  - '%'
   - END
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
