@@ -70,11 +70,11 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - PG UP
   - $$mdi:pan-down$$
+  - F6
   - F7
   - F8
   - F9
   - F10
-  - F11
   - {t: F11, h: '$$mdi:apple-keyboard-shift$$'}
   - '%'
   - END
