@@ -61,7 +61,7 @@
             bindings = <&caps_word>, <&kp CAPS>;
         };
 
-        shift_caps {
+        shift_caps: shift_caps {
             compatible = "zmk,behavior-mod-tap";
             label = "SHIFT_CAPS";
             #binding-cells = <0>;
