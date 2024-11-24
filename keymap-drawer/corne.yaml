@@ -124,7 +124,7 @@ layers:
   - KP 5
   - KP 6
   - KP PLUS
-  - $$mdi:alpha-w-box$$
+  - '&caps_or_word'
   - RGB TOG
   - RGB HUD
   - RGB SAD
@@ -137,7 +137,7 @@ layers:
   - KP 2
   - KP 3
   - KP DOT
-  - $$mdi:apple-keyboard-caps$$
+  - KP ENTERS
   - $$mdi:progress-download$$
   - ^
   - )
