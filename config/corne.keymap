@@ -40,7 +40,6 @@
             wait-ms = <50>;
             tap-ms = <5>;
             compatible = "zmk,behavior-macro";
-            label = "WIN_SLEEP";
             #binding-cells = <0>;
             bindings = <&kp LG(X) &kp U &kp S>;
         };
@@ -49,35 +48,15 @@
     behaviors {
         lclk_rclk: lclk_rclk {
             compatible = "zmk,behavior-tap-dance";
-            label = "LCLK_RCLK";
             #binding-cells = <0>;
             bindings = <&mkp LCLK>, <&mkp RCLK>;
         };
 
-        caps_or_word: caps_or_word {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CAPS_OR_WORD";
-            #binding-cells = <0>;
-            bindings = <&caps_word>, <&kp CAPS>;
-        };
-
-        rpi: require_prior_idle {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <0>;
-    flavor = "tap-preferred";
-    tapping-term-ms = <200>;
-    quick-tap-ms = <200>;
-    require-prior-idle-ms = <125>;
-    bindings = <&kp RSHFT>, <&kp Q>;
-};
-
-
-        // shift_caps: shift_caps {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     flavor = "hold-preferred";
-        //     label = "SHIFT_CAPS";
+        // caps_or_word: caps_or_word {
+        //     compatible = "zmk,behavior-tap-dance";
+        //     label = "CAPS_OR_WORD";
         //     #binding-cells = <0>;
-        //     bindings = <&kp RSHFT>, <&kp A>;
+        //     bindings = <&caps_word>, <&kp CAPS>;
         // };
 
         mmv {
@@ -122,7 +101,7 @@
             display-name = "SUPER";
             bindings = <
 &kp LA(F4)       &kp N1           &kp N2           &kp N3           &kp N4           &kp N5           &msc SCRL_UP     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0           &win_sleep
-&mt LSHFT ENTER  &kp HOME         &kp BSPC         &kp UP           &kp DEL          &kp PG_UP        &msc SCRL_DOWN   &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &rpi
+&mt LSHFT ENTER  &kp HOME         &kp BSPC         &kp UP           &kp DEL          &kp PG_UP        &msc SCRL_DOWN   &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &mt RSHFT CAPS 
 &mt LGUI INS     &kp END          &kp LEFT         &kp DOWN         &kp RIGHT        &kp PG_DN        &msc SCRL_LEFT   &kp F1           &kp F2           &kp F3           &kp F4           &kp F5           &mt RGUI K_APP
 &kp C_MUTE                                         &kp PRINTSCREEN  &none            &kp PAUSE_BREAK  &msc SCRL_RIGHT  &mt RCTRL F11    &kp LPAR         &mt RALT F12                                       &kp LGUI >;
             sensor-bindings = <&scroll_encoder>;
