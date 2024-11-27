@@ -45,37 +45,37 @@ layers:
   - ACTION
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-right-bold$$
-  - _
+  - EXTRA
   - INPUT
   - RGUI
   - $$mdi:backspace-reverse-outline$$
   ACTION:
   - Alt+ F4
   - HOME
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
-  - $$mdi:arrow-up-bold$$
   - END
   - INS
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - PLAY PAUSE
+  - $$mdi:pan-up$$
   - F9
   - F10
   - F11
   - F12
-  - $$mdi:volume-off$$
+  - '&win_sleep'
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - PG UP
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - $$mdi:skip-previous$$
+  - $$mdi:pan-left$$
   - F5
   - F6
   - F7
   - F8
-  - $$mdi:volume-high$$
+  - $$mdi:pan-right$$
   - {t: PRINTSCREEN, h: '$$mdi:apple-keyboard-shift$$'}
   - Ctl+ Z
   - Ctl+ X
@@ -83,64 +83,64 @@ layers:
   - Ctl+ V
   - PG DN
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:skip-next$$
+  - $$mdi:pan-down$$
   - F1
   - F2
   - F3
   - F4
-  - {t: '$$mdi:volume-low$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-left-click-outline$$
   - SLCK
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - PAUSE BREAK
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - $$mdi:apple-keyboard-option$$
-  - EXTRA
-  - {t: APP, h: RGUI}
+  - BACK
+  - APP
+  - FORWARD
   - $$mdi:mouse-right-click-outline$$
   INPUT:
+  - '~'
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - $$mdi:pan-up$$
   - ^
+  - '&'
+  - '*'
+  - {t: '-', s: _}
+  - {t: '=', s: +}
+  - {t: \, s: '|'}
+  - $$mdi:apple-keyboard-control$$
+  - {t: '`', s: '~'}
+  - '{'
+  - {t: '[', s: '{'}
+  - (
+  - +
+  - $$mdi:pan-down$$
+  - '|'
+  - )
+  - {t: ']', s: '}'}
+  - '}'
+  - {t: '''', s: '"'}
+  - '"'
+  - $$mdi:apple-keyboard-shift$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - $$mdi:pan-up$$
+  - $$mdi:pan-left$$
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - $
-  - $$mdi:apple-keyboard-control$$
-  - {t: '`', s: '~'}
-  - '|'
-  - {t: '=', s: +}
-  - {t: '-', s: _}
-  - +
-  - $$mdi:pan-down$$
-  - '#'
-  - (
-  - {t: '[', s: '{'}
-  - '{'
-  - {t: '''', s: '"'}
-  - '"'
-  - $$mdi:apple-keyboard-shift$$
-  - '~'
-  - '&'
-  - '!'
-  - '@'
-  - '%'
-  - $$mdi:pan-left$$
-  - '*'
-  - )
-  - {t: ']', s: '}'}
-  - '}'
-  - {t: \, s: '|'}
   - $$mdi:apple-keyboard-shift$$
   - PLAY PAUSE
   - $$mdi:apple-keyboard-option$$
-  - EXTRA
+  - _
   - LGUI
   - $$mdi:pan-right$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -160,7 +160,7 @@ layers:
   - KP 8
   - KP 9
   - KP SUBTRACT
-  - '&win_sleep'
+  - $$mdi:volume-off$$
   - RGB TOG
   - RGB EFR
   - RGB BRI
@@ -173,7 +173,7 @@ layers:
   - KP 5
   - KP 6
   - KP PLUS
-  - KP ENTER
+  - $$mdi:volume-high$$
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - RGB EFF
   - RGB BRD
@@ -186,13 +186,13 @@ layers:
   - KP 2
   - KP 3
   - KP DOT
-  - KP NUMLOCK
+  - $$mdi:volume-low$$
   - $$mdi:progress-download$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:skip-previous$$
+  - PLAY PAUSE
+  - $$mdi:skip-next$$
   - RGB EFF
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - KP 0
   - KP 0
   - RGB TOG
