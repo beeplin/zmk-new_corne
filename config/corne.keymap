@@ -49,27 +49,27 @@
     };
 
     behaviors {
-        lclk_rclk {
+        lclk_rclk: lclk_rclk {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&mkp LCLK>, <&mkp RCLK>;
         };
         
-        vol_up_prev {
+        vol_up_prev: vol_up_prev {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp C_PREV>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        vol_dn_next {
+        vol_dn_next: vol_dn_next {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp C_VOL_DN>, <&kp C_NEXT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mute_play_pause {
+        mute_play_pause: mute_play_pause {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp C_MUTE>, <&kp C_PLAY_PAUSE>;
