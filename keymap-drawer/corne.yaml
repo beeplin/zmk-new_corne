@@ -45,8 +45,8 @@ layers:
   - {t: PAUSE BREAK, h: LOWER}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - RAISE
+  - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: RAISE}
   - RGUI
   - {t: '$$mdi:keyboard-return$$', type: enter}
   LOWER:
