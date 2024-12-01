@@ -24,12 +24,23 @@
     flavor = "hold-preferred";
     // tapping-term-ms = <150>;
 };
-
 &mt {
     // tapping-term-ms = <150>;
 };
 
 / {
+    rgb_encoder: rgb_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        label = "RGB_ENCODER";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+    };
+    scroll_encoder: scroll_encoder  {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+        tap-ms = <30>;
+    };  
     // conditional_layers {
     //     compatible = "zmk,conditional-layers";
     //     tri_layer {
@@ -37,7 +48,6 @@
     //         then-layer = <3>;
     //     };
     // };
-
     macros {
         win_sleep: win_sleep {
             wait-ms = <50>;
@@ -47,43 +57,44 @@
             bindings = <&kp LG(X) &kp U &kp S>;
         };
     };
-
     behaviors {
         lclk_rclk: lclk_rclk {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&mkp LCLK>, <&mkp RCLK>;
         };
-        
         vol_up_prev: vol_up_prev {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp C_PREV>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
         vol_dn_next: vol_dn_next {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp C_VOL_DN>, <&kp C_NEXT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
         mute_play_pause: mute_play_pause {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp C_MUTE>, <&kp C_PLAY_PAUSE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-         
+        ls: layer_stick {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&sk>;
+        };        
         hs: hold_stick {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&kp>, <&sk>;
-        };       
-
+        };
         hc: hold_capsword {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -91,28 +102,11 @@
             tapping-term-ms = <200>;
             bindings = <&kp>, <&caps_word>;
         };
-        
-        ls: layer_stick {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&sk>;
-        };
-
-        // caps_or_word: caps_or_word {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "CAPS_OR_WORD";
-        //     #binding-cells = <0>;
-        //     bindings = <&caps_word>, <&kp CAPS>;
-        // };
-
         mmv {
             acceleration-exponent = <0>;      // 1
             time-to-max-speed-ms = <900>;    // 40
             delay-ms = <0>;                   // 0
         };
-
         msc {
             acceleration-exponent = <1>;      // 0      
             time-to-max-speed-ms = <400>;      // 500
@@ -120,19 +114,6 @@
         };
     };
 
-    rgb_encoder: rgb_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        label = "RGB_ENCODER";
-        #sensor-binding-cells = <0>;
-        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-    };
-
-    scroll_encoder: scroll_encoder  {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        tap-ms = <30>;
-    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -148,8 +129,8 @@
         layer1 {
             display-name = "LOWER";
             bindings = <
-&kp LALT         &kp TAB          &kp BSPC         &kp DEL          &key_repeat      &kp PRINTSCREEN  &mmv MOVE_UP     &kp INS          &kp N7           &kp N8           &kp N9           &kp PLUS         &kp RALT 
-&kp LCTRL        &kp ESC          &hs LGUI LGUI    &hs LALT LALT    &hs LCTRL LCTRL  &kp PG_UP        &mmv MOVE_DOWN   &kp HOME         &kp N4           &kp N5           &kp N6           &kp MINUS        &kp RCTRL
+&kp LALT         &kp ENTER        &kp BSPC         &kp DEL          &key_repeat      &kp PRINTSCREEN  &mmv MOVE_UP     &kp INS          &kp N7           &kp N8           &kp N9           &kp PLUS         &kp RALT 
+&kp LCTRL        &kp TAB          &hs LGUI LGUI    &hs LALT LALT    &hs LCTRL LCTRL  &kp PG_UP        &mmv MOVE_DOWN   &kp HOME         &kp N4           &kp N5           &kp N6           &kp MINUS        &kp RCTRL
 &kp LSHFT        &kp LC(Z)        &kp LC(X)        &kp LC(C)        &kp LC(V)        &kp PG_DN        &mmv MOVE_LEFT   &kp END          &kp N1           &kp N2           &kp N3           &kp EQUAL        &kp RSHFT
 &mkp LCLK                                          &none            &none            &none            &mmv MOVE_RIGHT  &hc LSHFT CAPS   &kp N0           &kp RGUI                                           &mkp RCLK >;
             sensor-bindings = <&scroll_encoder>;
@@ -160,7 +141,7 @@
 &kp LALT         &kp GRAVE        &kp AT           &kp PRCNT        &kp UNDER        &vol_up_prev     &msc SCRL_UP     &kp CARET        &kp ASTRK        &kp POUND        &kp DLLR         &kp BSLH         &kp RALT
 &kp LCTRL        &kp SQT          &kp LBRC         &kp LBKT         &kp LPAR         &mute_play_pause &msc SCRL_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp ENTER        &kp RCTRL
 &kp LSHFT        &kp DQT          &kp RBRC         &kp RBKT         &kp RPAR         &vol_dn_next     &msc SCRL_LEFT   &kp AMPS         &kp PIPE         &kp EXCL         &kp TILDE        &kp K_APP        &kp RSHFT
-&kp C_PLAY_PAUSE                                   &kp LGUI         &mo 3            &kp LSHIFT       &msc SCRL_RIGHT  &none            &none            &none                                              &lclk_rclk >;
+&kp C_PLAY_PAUSE                                   &kp LGUI         &mo 3            &hc LSHFT CAPS   &msc SCRL_RIGHT  &none            &none            &none                                              &lclk_rclk >;
             sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
         };
 
