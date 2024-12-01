@@ -83,6 +83,14 @@
             tapping-term-ms = <200>;
             bindings = <&kp>, <&sk>;
         };
+        
+        ls: hold_stick {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&sk>;
+        };
 
         // caps_or_word: caps_or_word {
         //     compatible = "zmk,behavior-tap-dance";
@@ -126,7 +134,7 @@
 &kp LALT         &kp Q            &kp W            &kp E            &kp R            &kp T            &kp UP           &kp Y            &kp U            &kp I            &kp O            &kp P            &kp RALT
 &kp LCTRL        &kp A            &kp S            &kp D            &kp F            &kp G            &kp DOWN         &kp H            &kp J            &kp K            &kp L            &kp SEMI         &kp RCTRL
 &kp LSHFT        &kp Z            &kp X            &kp C            &kp V            &kp B            &kp LEFT         &kp N            &kp M            &kp COMMA        &kp DOT          &kp FSLH         &kp RSHFT
-&kp C_MUTE                                         &kp LGUI         &lt 1 PSBRK      &kp SPACE        &kp RIGHT        &hs LSHFT LSHFT  &mo 2            &kp RGUI                                           &kp ENTER >;
+&kp C_MUTE                                         &kp LGUI         &lt 1 PSBRK      &kp SPACE        &kp RIGHT        &mt LSHFT CAPS   &ls 2 LSHFT      &kp RGUI                                           &kp ENTER >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         layer1 {
