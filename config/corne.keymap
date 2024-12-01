@@ -84,7 +84,7 @@
             bindings = <&kp>, <&sk>;
         };
         
-        ls: hold_stick {
+        ls: layer_stick {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
