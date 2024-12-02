@@ -131,7 +131,7 @@
 &kp LALT         &kp Q            &kp W            &kp E            &kp R            &kp T            &kp UP           &kp Y            &kp U            &kp I            &kp O            &kp P            &kp RALT
 &kp LCTRL        &kp A            &kp S            &kp D            &kp F            &kp G            &kp DOWN         &kp H            &kp J            &kp K            &kp L            &kp SEMI         &kp RCTRL
 &kp LSHFT        &kp Z            &kp X            &kp C            &kp V            &kp B            &kp LEFT         &kp N            &kp M            &kp COMMA        &kp DOT          &kp FSLH         &kp RSHFT
-&kp C_MUTE                                         &kp LGUI         &lt 1 ESC        &kp SPACE        &kp RIGHT        &kp LSHFT        &lt 2 ENTER      &kp RGUI                                           &kp ENTER >;
+&kp C_MUTE                                         &kp LGUI         &lt 1 ESC        &kp SPACE        &kp RIGHT        &hs LSHFT LSHFT  &lt 2 ENTER      &kp RGUI                                           &kp ENTER >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         layer1 {
