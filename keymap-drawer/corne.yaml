@@ -42,14 +42,14 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:volume-off$$
   - LGUI
-  - {t: '$$mdi:keyboard-esc$$', h: NAVNUM}
+  - {t: '$$mdi:keyboard-esc$$', h: LOWER}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-right-bold$$
   - _
-  - {t: '$$mdi:apple-keyboard-shift$$', h: SYMMSC}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: RAISE}
   - RGUI
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  NAVNUM:
+  LOWER:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -98,7 +98,7 @@ layers:
   - {t: '0', s: )}
   - RGUI
   - $$mdi:mouse-right-click-outline$$
-  SYMMSC:
+  RAISE:
   - $$mdi:apple-keyboard-option$$
   - '!'
   - '@'
@@ -140,14 +140,14 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - PLAY PAUSE
   - LGUI
-  - CFGFUN
+  - ADJUST
   - {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:pan-right$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lclk_rclk'
-  CFGFUN:
+  ADJUST:
   - $$mdi:apple-keyboard-option$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
