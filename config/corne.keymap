@@ -30,6 +30,12 @@
     release-after-ms = <2000>;
     quick-release;
     lazy;
+};
+
+&sk {
+    release-after-ms = <2000>;
+    quick-release;
+    lazy;
 }
 
 &mt {
