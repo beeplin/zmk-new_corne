@@ -133,9 +133,9 @@ layers:
   - PAUSE BREAK
   - $$mdi:pan-left$$
   - APP
+  - {t: '=', s: +}
   - '|'
-  - '!'
-  - '~'
+  - {t: \, s: '|'}
   - '"'
   - $$mdi:apple-keyboard-shift$$
   - PLAY PAUSE
