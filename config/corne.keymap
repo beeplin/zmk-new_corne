@@ -123,24 +123,24 @@
 &kp LALT         &kp Q            &kp W            &kp E            &kp R            &kp T            &kp UP           &kp Y            &kp U            &kp I            &kp O            &kp P            &kp RALT
 &kp LCTRL        &kp A            &kp S            &kp D            &kp F            &kp G            &kp DOWN         &kp H            &kp J            &kp K            &kp L            &kp SEMI         &kp RCTRL
 &kp LSHFT        &kp Z            &kp X            &kp C            &kp V            &kp B            &kp LEFT         &kp N            &kp M            &kp COMMA        &kp DOT          &kp FSLH         &kp RSHFT
-&kp C_MUTE                                         &kp LGUI         &lt 1 ESC        &kp SPACE        &kp RIGHT        &kp ENTER        &ls 2 LSHFT      &kp RGUI                                           &kp ENTER >;
+&kp C_MUTE                                         &kp LGUI         &lt 1 ESC        &kp SPACE        &kp RIGHT        &kp UNDER        &ls 2 LSHFT      &kp RGUI                                           &kp ENTER >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         layer1 {
-            display-name = "LOWER";
+            display-name = "NAVNUM";
             bindings = <
-&kp LALT         &kp ENTER        &kp BSPC         &kp DEL          &key_repeat      &kp PRINTSCREEN  &mmv MOVE_UP     &kp INS          &kp N7           &kp N8           &kp N9           &kp PLUS         &kp RALT 
-&kp LCTRL        &kp TAB          &hs LGUI LGUI    &hs LALT LALT    &hs LCTRL LCTRL  &kp PG_UP        &mmv MOVE_DOWN   &kp HOME         &kp N4           &kp N5           &kp N6           &kp MINUS        &kp RCTRL
-&kp LSHFT        &kp LC(Z)        &kp LC(X)        &kp LC(C)        &kp LC(V)        &kp PG_DN        &mmv MOVE_LEFT   &kp END          &kp N1           &kp N2           &kp N3           &kp EQUAL        &kp RSHFT
+&kp LALT         &kp TAB          &kp BSPC         &kp DEL          &HOME            &kp END          &mmv MOVE_UP     &kp C_PREV       &kp N7           &kp N8           &kp N9           &kp C_VOL_UP     &kp RALT 
+&kp LCTRL        &kp ENTER        &hs LGUI LGUI    &hs LALT LALT    &hs LCTRL LCTRL  &kp PG_UP        &mmv MOVE_DOWN   &kp C_PLAY_PAUSE &kp N4           &kp N5           &kp N6           &kp C_MUTE       &kp RCTRL
+&kp LSHFT        &kp LEFT         &kp UP           &kp DOWN         &kp RIGHT        &kp PG_DN        &mmv MOVE_LEFT   &kp C_NEXT       &kp N1           &kp N2           &kp N3           &kp C_VOL_DN     &kp RSHFT
 &mkp LCLK                                          &none            &none            &none            &mmv MOVE_RIGHT  &hc LSHFT CAPS   &kp N0           &kp RGUI                                           &mkp RCLK >;
             sensor-bindings = <&scroll_encoder>;
         };
         layer2 {
             display-name = "RAISE";
             bindings = <
-&kp LALT         &kp GRAVE        &kp AT           &kp PRCNT        &kp UNDER        &vol_up_prev     &msc SCRL_UP     &kp CARET        &kp ASTRK        &kp POUND        &kp DLLR         &kp BSLH         &kp RALT
-&kp LCTRL        &kp SQT          &kp LBRC         &kp LBKT         &kp LPAR         &mute_play_pause &msc SCRL_DOWN   &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp ENTER        &kp RCTRL
-&kp LSHFT        &kp DQT          &kp RBRC         &kp RBKT         &kp RPAR         &vol_dn_next     &msc SCRL_LEFT   &kp AMPS         &kp PIPE         &kp EXCL         &kp TILDE        &kp K_APP        &kp RSHFT
+&kp LALT         &kp EXCL         &kp AT           &kp POUND        &kp DLLR         &kp PRCNT        &msc SCRL_UP     &kp CARET        &kp AMPS         &kp ASTRK        &kp MINUS        &kp PLUS         &kp RALT
+&kp LCTRL        &kp GRAVE        &kp LBRC         &kp LBKT         &kp LPAR         &kp PRINTSCREEN  &msc SCRL_DOWN   &kp INS          &hs RCTRL RCTRL  &hs RALT RALT    &hs RGUI RGUI    &kp SQT          &kp RCTRL
+&kp LSHFT        &kp TILDE        &kp RBRC         &kp RBKT         &kp RPAR         &kp PAUSE_BREAK  &msc SCRL_LEFT   &kp K_APP        &kp PIPE         &kp EXCL         &kp TILDE        &kp DQT          &kp RSHFT
 &kp C_PLAY_PAUSE                                   &kp LGUI         &mo 3            &hc LSHFT CAPS   &msc SCRL_RIGHT  &none            &none            &none                                              &lclk_rclk >;
             sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
         };
