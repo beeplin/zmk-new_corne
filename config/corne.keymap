@@ -24,6 +24,14 @@
     flavor = "hold-preferred";
     // tapping-term-ms = <150>;
 };
+
+
+&sk {
+    release-after-ms = <2000>;
+    quick-release;
+    lazy;
+}
+
 &mt {
     // tapping-term-ms = <150>;
 };
