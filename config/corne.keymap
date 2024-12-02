@@ -127,7 +127,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         layer1 {
-            display-name = "NAVNUM";
+            display-name = "LOWER";
             bindings = <
 &kp LALT         &kp TAB          &kp BSPC         &kp DEL          &kp HOME         &kp END          &mmv MOVE_UP     &kp C_PREV       &kp N7           &kp N8           &kp N9           &kp C_VOL_UP     &kp RALT 
 &kp LCTRL        &kp ENTER        &hs LGUI LGUI    &hs LALT LALT    &hs LCTRL LCTRL  &kp PG_UP        &mmv MOVE_DOWN   &kp C_PLAY_PAUSE &kp N4           &kp N5           &kp N6           &kp C_MUTE       &kp RCTRL
@@ -136,7 +136,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
         layer2 {
-            display-name = "SYMMSC";
+            display-name = "RAISE";
             bindings = <
 &kp LALT         &kp EXCL         &kp AT           &kp POUND        &kp DLLR         &kp PRCNT        &msc SCRL_UP     &kp CARET        &kp AMPS         &kp ASTRK        &kp MINUS        &kp PLUS         &kp RALT
 &kp LCTRL        &kp GRAVE        &kp LBRC         &kp LBKT         &kp LPAR         &kp PRINTSCREEN  &msc SCRL_DOWN   &kp INS          &hs RCTRL RCTRL  &hs RALT RALT    &hs RGUI RGUI    &kp SQT          &kp RCTRL
@@ -146,7 +146,7 @@
         };
 
         layer3 {
-            display-name = "CFGFUN";
+            display-name = "ADJUST";
             bindings = <
 &kp LALT         &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &rgb_ug RGB_BRI  &bt BT_CLR       &kp F7           &kp F8           &kp F9           &kp F12          &kp RALT
 &kp LCTRL        &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_TOG  &kp F4           &kp F5           &kp F6           &kp F11          &kp RCTRL
