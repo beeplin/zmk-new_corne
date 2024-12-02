@@ -51,7 +51,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   LOWER:
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   - '&key_repeat'
@@ -64,7 +64,7 @@ layers:
   - +
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-tab$$
   - {t: LGUI, h: LGUI}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$'}
@@ -141,7 +141,7 @@ layers:
   - PLAY PAUSE
   - LGUI
   - ADJUST
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:pan-right$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
