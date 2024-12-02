@@ -45,17 +45,17 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: LOWER}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-right-bold$$
-  - _
-  - {t: '$$mdi:apple-keyboard-shift$$', h: RAISE}
+  - LSHIF
+  - {t: '$$mdi:keyboard-return$$', h: RAISE}
   - RGUI
   - {t: '$$mdi:keyboard-return$$', type: enter}
   LOWER:
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-tab$$
+  - HOME
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
-  - HOME
   - END
+  - PRINTSCREEN
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:skip-previous$$
   - {t: '7', s: '&'}
@@ -117,9 +117,9 @@ layers:
   - '{'
   - {t: '[', s: '{'}
   - (
-  - PRINTSCREEN
-  - $$mdi:pan-down$$
   - INS
+  - $$mdi:pan-down$$
+  - $$mdi:brightness-5$$
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: RGUI, h: RGUI}
@@ -130,9 +130,9 @@ layers:
   - '}'
   - {t: ']', s: '}'}
   - )
-  - PAUSE BREAK
-  - $$mdi:pan-left$$
   - APP
+  - $$mdi:pan-left$$
+  - $$mdi:brightness-7$$
   - {t: '=', s: +}
   - '|'
   - {t: \, s: '|'}
@@ -141,7 +141,7 @@ layers:
   - PLAY PAUSE
   - LGUI
   - ADJUST
-  - {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - _
   - $$mdi:pan-right$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
