@@ -46,7 +46,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:arrow-right-bold$$
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '2'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: RAISE}
   - RGUI
   - {t: '$$mdi:keyboard-return$$', type: enter}
   LOWER:
@@ -92,7 +92,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - $$mdi:progress-download$$
+  - PRINTSCREEN
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '0', s: )}
@@ -144,7 +144,7 @@ layers:
   - APP
   - $$mdi:pan-right$$
   - INS
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lclk_rclk'
   ADJUST:
@@ -187,12 +187,12 @@ layers:
   - F3
   - F10
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:progress-download$$
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
   - RGB EFF
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB TOG
