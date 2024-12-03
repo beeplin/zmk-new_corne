@@ -46,7 +46,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:arrow-right-bold$$
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:apple-keyboard-caps$$', h: RAISE}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '2'}
   - RGUI
   - {t: '$$mdi:keyboard-return$$', type: enter}
   LOWER:
@@ -144,7 +144,7 @@ layers:
   - APP
   - $$mdi:pan-right$$
   - INS
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lclk_rclk'
   ADJUST:
@@ -193,6 +193,6 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB EFF
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB TOG
