@@ -45,7 +45,7 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: LOWER}
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-right-bold$$
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:alpha-w-box$$', h: RAISE}
   - RGUI
   - {t: '$$mdi:keyboard-return$$', type: enter}
