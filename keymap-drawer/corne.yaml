@@ -114,8 +114,8 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - {t: '`', s: '~'}
-  - {t: '[', s: '{'}
   - '{'
+  - {t: '[', s: '{'}
   - (
   - $$mdi:brightness-5$$
   - $$mdi:pan-down$$
@@ -127,8 +127,8 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - '~'
-  - {t: ']', s: '}'}
   - '}'
+  - {t: ']', s: '}'}
   - )
   - $$mdi:brightness-7$$
   - $$mdi:pan-left$$
