@@ -109,41 +109,41 @@ layers:
   - ^
   - '&'
   - '*'
-  - {t: '-', s: _}
-  - +
+  - '"'
+  - {t: \, s: '|'}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - {t: '`', s: '~'}
   - '{'
   - {t: '[', s: '{'}
   - (
-  - INS
-  - $$mdi:pan-down$$
   - $$mdi:brightness-5$$
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: RGUI, h: RGUI}
+  - $$mdi:pan-down$$
+  - +
+  - {t: '-', s: _}
+  - {t: '=', s: +}
   - {t: '''', s: '"'}
+  - {t: ',', s: <}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
   - '~'
   - '}'
   - {t: ']', s: '}'}
   - )
-  - APP
-  - $$mdi:pan-left$$
   - $$mdi:brightness-7$$
-  - {t: '=', s: +}
+  - $$mdi:pan-left$$
   - '|'
-  - {t: \, s: '|'}
-  - '"'
+  - _
+  - <
+  - '>'
+  - '?'
   - $$mdi:apple-keyboard-shift$$
   - PLAY PAUSE
   - LGUI
   - ADJUST
-  - _
+  - APP
   - $$mdi:pan-right$$
-  - $$mdi:progress-download$$
+  - INS
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&lclk_rclk'
