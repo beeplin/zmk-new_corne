@@ -71,9 +71,9 @@ layers:
   - PG UP
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - PLAY PAUSE
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '6', s: ^}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
@@ -84,9 +84,9 @@ layers:
   - PG DN
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:skip-next$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
   - $$mdi:volume-low$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:mouse-left-click-outline$$
@@ -169,9 +169,9 @@ layers:
   - RGB EFR
   - RGB BRD
   - RGB TOG
-  - F4
-  - F5
-  - F6
+  - F1
+  - F2
+  - F3
   - F11
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
@@ -182,9 +182,9 @@ layers:
   - RGB EFF
   - RGB EFR
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
-  - F1
-  - F2
-  - F3
+  - F4
+  - F5
+  - F6
   - F10
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
