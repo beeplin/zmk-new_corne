@@ -146,7 +146,7 @@ layers:
   - INS
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&lclk_rclk'
+  - '&mkp MB4'
   ADJUST:
   - $$mdi:apple-keyboard-option$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
