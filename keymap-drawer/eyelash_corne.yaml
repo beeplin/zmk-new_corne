@@ -19,7 +19,9 @@ layers:
   - D
   - F
   - G
-  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
   - H
   - J
   - K
@@ -32,22 +34,20 @@ layers:
   - C
   - V
   - B
-  - $$mdi:arrow-left-bold$$
+  - $$mdi:volume-off$$
+  - $$mdi:arrow-down-bold$$
   - N
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:volume-off$$
   - LGUI
   - {t: '$$mdi:keyboard-esc$$', h: NAVNUM}
   - {t: '$$mdi:apple-keyboard-shift$$', h: FUNMSE}
-  - $$mdi:arrow-right-bold$$
   - $$mdi:keyboard-space$$
   - {t: SYMBOL, h: SYMBOL}
   - RGUI
-  - {t: '$$mdi:keyboard-return$$', type: enter}
   NAVNUM:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-tab$$
@@ -68,7 +68,9 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$'}
   - PG UP
-  - '&mmv SCRL_DOWN'
+  - '&mmv SCRL_LEFT'
+  - $$mdi:mouse-left-click-outline$$
+  - '&mmv SCRL_RIGHT'
   - $$mdi:volume-high$$
   - {t: '4', s: $}
   - {t: '5', s: '%'}
@@ -81,22 +83,20 @@ layers:
   - Ctl+ C
   - Ctl+ V
   - PG DN
-  - '&mmv SCRL_LEFT'
+  - $$mdi:mouse-right-click-outline$$
+  - '&mmv SCRL_DOWN'
   - $$mdi:volume-low$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - $$mdi:skip-next$$
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:mouse-right-click-outline$$
   - LGUI
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mmv SCRL_RIGHT'
   - {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '0', s: )}
   - RGUI
-  - $$mdi:mouse-left-click-outline$$
   SYMBOL:
   - $$mdi:apple-keyboard-option$$
   - '!'
@@ -117,7 +117,9 @@ layers:
   - {t: '[', s: '{'}
   - (
   - {t: '`', s: '~'}
-  - RGB SAD
+  - RGB HUD
+  - RGB TOG
+  - RGB HUI
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -130,22 +132,20 @@ layers:
   - {t: ']', s: '}'}
   - )
   - '~'
-  - RGB HUI
+  - PLAY PAUSE
+  - RGB SAD
   - '|'
   - _
   - <
   - '>'
   - '?'
   - $$mdi:apple-keyboard-shift$$
-  - PLAY PAUSE
   - LGUI
   - {t: '-', s: _}
   - +
-  - RGB HUD
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - RGUI
-  - RGB TOG
   FUNMSE:
   - $$mdi:apple-keyboard-option$$
   - F12
@@ -166,7 +166,9 @@ layers:
   - F5
   - F4
   - $$mdi:keyboard-space$$
-  - '&msc MOVE_DOWN'
+  - '&msc MOVE_LEFT'
+  - $$mdi:mouse-left-click-outline$$
+  - '&msc MOVE_RIGHT'
   - APP
   - {t: '$$mdi:mouse-left-click-outline$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:mouse-right-click-outline$$', h: '$$mdi:apple-keyboard-option$$'}
@@ -179,22 +181,20 @@ layers:
   - F2
   - F1
   - '&key_repeat'
-  - '&msc MOVE_LEFT'
+  - RCLK
+  - '&msc MOVE_DOWN'
   - '&win_sleep'
   - $$mdi:pan-left$$
   - $$mdi:pan-down$$
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - $$mdi:apple-keyboard-shift$$
-  - RCLK
   - LGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - '&msc MOVE_RIGHT'
   - CONFIG
   - '&mkp MB3'
   - RGUI
-  - $$mdi:mouse-left-click-outline$$
   CONFIG:
   - $$mdi:apple-keyboard-option$$
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -215,7 +215,9 @@ layers:
   - {t: BT DISC, h: '2'}
   - {t: BT DISC, h: '3'}
   - {t: BT DISC, h: '4'}
-  - RGB BRD
+  - RGB EFR
+  - RGB TOG
+  - RGB EFF
   - RGB SPD
   - RGB HUD
   - RGB SAD
@@ -228,19 +230,17 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
-  - RGB EFR
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - RGB BRD
   - RGB TOG
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - LGUI
   - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - RGB EFF
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - $$mdi:progress-download$$
   - RGUI
-  - RGB TOG
