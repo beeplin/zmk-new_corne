@@ -94,8 +94,8 @@
             display-name = "FUNMSE";
             bindings = <
 &kp LALT         &kp F12         &kp F9           &kp F8            &kp F7           &studio_unlock                    &mmv MOVE_UP                      &kp INS          &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT  &kp RALT
-&kp LCTRL        &kp F11         &kp F6           &kp F5            &kp F4           &kp SPACE        &mmv MOVE_LEFT   &mkp LCLK        &mmv MOVE_RIGHT  &kp K_APP        &hmk LCTRL LCLK  &hmk LALT RCLK   &hmk LGUI MB4    &hmk LSHFT MB5   &kp RCTRL
-&kp LSHFT        &kp F10         &kp F3           &kp F2            &kp F1           &key_repeat      &kp RCLK         &mmv MOVE_DOWN                    &win_sleep       &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT  &kp RSHFT
+&kp LCTRL        &kp F11         &kp F6           &kp F5            &kp F4           &msc SCRL_RIGHT  &mmv MOVE_LEFT   &mkp LCLK        &mmv MOVE_RIGHT  &kp K_APP        &hmk LCTRL LCLK  &hmk LALT RCLK   &hmk LGUI MB4    &hmk LSHFT MB5   &kp RCTRL
+&kp LSHFT        &kp F10         &kp F3           &kp F2            &kp F1           &msc SCRL_LEFT   &kp RCLK         &mmv MOVE_DOWN                    &win_sleep       &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT  &kp RSHFT
                                                   &kp LGUI          &none            &none                                                               &mo 4            &mkp MB3         &kp RGUI >;
             sensor-bindings = <&scroll_encoder>;
         };
