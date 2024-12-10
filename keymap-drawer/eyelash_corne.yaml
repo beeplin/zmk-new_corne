@@ -55,7 +55,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-option$$'}
   - HOME
   - END
-  - '&mmv SCRL_UP'
+  - $$mdi:pan-up$$
   - $$mdi:volume-off$$
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -68,9 +68,9 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$'}
   - PG UP
-  - '&mmv SCRL_LEFT'
+  - $$mdi:pan-left$$
   - $$mdi:mouse-left-click-outline$$
-  - '&mmv SCRL_RIGHT'
+  - $$mdi:pan-right$$
   - $$mdi:volume-high$$
   - {t: '4', s: $}
   - {t: '5', s: '%'}
@@ -84,7 +84,7 @@ layers:
   - Ctl+ V
   - PG DN
   - $$mdi:mouse-right-click-outline$$
-  - '&mmv SCRL_DOWN'
+  - $$mdi:pan-down$$
   - $$mdi:volume-low$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -153,7 +153,7 @@ layers:
   - F8
   - F7
   - '&studio_unlock'
-  - '&msc MOVE_UP'
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - INS
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -166,9 +166,9 @@ layers:
   - F5
   - F4
   - $$mdi:keyboard-space$$
-  - '&msc MOVE_LEFT'
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
-  - '&msc MOVE_RIGHT'
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - APP
   - {t: '$$mdi:mouse-left-click-outline$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:mouse-right-click-outline$$', h: '$$mdi:apple-keyboard-option$$'}
@@ -182,7 +182,7 @@ layers:
   - F1
   - '&key_repeat'
   - RCLK
-  - '&msc MOVE_DOWN'
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '&win_sleep'
   - $$mdi:pan-left$$
   - $$mdi:pan-down$$
