@@ -48,11 +48,7 @@
         //     time-to-max-speed-ms = <400>;      // 500
         //     delay-ms = <0>;                   // 10
         // };
-        // lclk_rclk: lclk_rclk {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     #binding-cells = <0>;
-        //     bindings = <&mkp LCLK>, <&mkp RCLK>;
-        // };
+        // lclk_rclk: lclk_rclk    { bindings = <&mkp LCLK>, <&mkp RCLK>; compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; };
         lsk: layer_sticky_key   { bindings = <&mo>, <&sk>;        compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
         lsl: layer_sticky_layer { bindings = <&mo>, <&sl>;        compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
         lmk: layer_mouse_key    { bindings = <&mo>, <&mkp>;       compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
