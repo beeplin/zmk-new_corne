@@ -94,7 +94,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - APP
+  - PRINTSCREEN
   - {t: '0', s: )}
   - {t: LGUI, h: '$$mdi:apple-keyboard-option$$'}
   SYMBOL:
@@ -142,7 +142,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: LGUI, h: '$$mdi:apple-keyboard-option$$'}
   - CONFIG
-  - PRINTSCREEN
+  - APP
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
