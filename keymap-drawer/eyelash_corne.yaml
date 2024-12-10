@@ -165,7 +165,7 @@ layers:
   - F6
   - F5
   - F4
-  - $$mdi:keyboard-space$$
+  - $$mdi:pan-right$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -180,7 +180,7 @@ layers:
   - F3
   - F2
   - F1
-  - '&key_repeat'
+  - $$mdi:pan-left$$
   - RCLK
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '&win_sleep'
