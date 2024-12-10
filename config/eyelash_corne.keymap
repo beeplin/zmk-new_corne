@@ -119,9 +119,9 @@
         layer1 {
             display-name = "NAVNUM";
             bindings = <
-&kp LALT         &kp TAB          &hs LGUI LGUI    &hs LALT LALT    &kp HOME         &kp END                           &mmv SCRL_UP                      &kp C_MUTE       &kp N7           &kp N8           &kp N9           &kp C_PLAY_PAUSE &kp RALT 
-&kp LCTRL        &kp ENTER        &kp BSPC         &kp DEL          &hs LCTRL LCTRL  &kp PG_UP        &mmv SCRL_LEFT   &mkp LCLK        &mmv SCRL_RIGHT  &kp C_VOL_UP     &kp N4           &kp N5           &kp N6           &kp C_PREV       &kp RCTRL
-&kp LSHFT        &kp LC(Z)        &kp LC(X)        &kp LC(C)        &kp LC(V)        &kp PG_DN        &mkp RCLK        &mmv SCRL_DOWN                    &kp C_VOL_DN     &kp N1           &kp N2           &kp N3           &kp C_NEXT       &kp RSHFT
+&kp LALT         &kp TAB          &hs LGUI LGUI    &hs LALT LALT    &kp HOME         &kp END                           &msc SCRL_UP                      &kp C_MUTE       &kp N7           &kp N8           &kp N9           &kp C_PLAY_PAUSE &kp RALT 
+&kp LCTRL        &kp ENTER        &kp BSPC         &kp DEL          &hs LCTRL LCTRL  &kp PG_UP        &msc SCRL_LEFT   &mkp LCLK        &msc SCRL_RIGHT  &kp C_VOL_UP     &kp N4           &kp N5           &kp N6           &kp C_PREV       &kp RCTRL
+&kp LSHFT        &kp LC(Z)        &kp LC(X)        &kp LC(C)        &kp LC(V)        &kp PG_DN        &mkp RCLK        &msc SCRL_DOWN                    &kp C_VOL_DN     &kp N1           &kp N2           &kp N3           &kp C_NEXT       &kp RSHFT
                                                    &kp LGUI         &none            &none                                                               &hcw LSHFT CAPS  &kp N0           &kp RGUI >;
             sensor-bindings = <&scroll_encoder>;
         };
@@ -137,9 +137,9 @@
         layer3 {
             display-name = "FUNMSE";
             bindings = <
-&kp LALT         &kp F12         &kp F9           &kp F8            &kp F7           &studio_unlock                    &msc MOVE_UP                      &kp INS          &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT  &kp RALT
-&kp LCTRL        &kp F11         &kp F6           &kp F5            &kp F4           &kp SPACE        &msc MOVE_LEFT   &mkp LCLK        &msc MOVE_RIGHT  &kp K_APP        &hmk LCTRL LCLK  &hmk LALT RCLK   &hmk LGUI MB4    &hmk LSHFT MB5   &kp RCTRL
-&kp LSHFT        &kp F10         &kp F3           &kp F2            &kp F1           &key_repeat      &kp RCLK         &msc MOVE_DOWN                    &win_sleep       &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT  &kp RSHFT
+&kp LALT         &kp F12         &kp F9           &kp F8            &kp F7           &studio_unlock                    &mmv MOVE_UP                      &kp INS          &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT  &kp RALT
+&kp LCTRL        &kp F11         &kp F6           &kp F5            &kp F4           &kp SPACE        &mmv MOVE_LEFT   &mkp LCLK        &mmv MOVE_RIGHT  &kp K_APP        &hmk LCTRL LCLK  &hmk LALT RCLK   &hmk LGUI MB4    &hmk LSHFT MB5   &kp RCTRL
+&kp LSHFT        &kp F10         &kp F3           &kp F2            &kp F1           &key_repeat      &kp RCLK         &mmv MOVE_DOWN                    &win_sleep       &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT  &kp RSHFT
                                                   &kp LGUI          &none            &none                                                               &mo 4            &mkp MB3         &kp RGUI >;
             sensor-bindings = <&scroll_encoder>;
         };
