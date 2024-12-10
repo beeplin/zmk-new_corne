@@ -44,15 +44,15 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - LGUI
   - {t: '$$mdi:keyboard-esc$$', h: NAVNUM}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: FUNMSE}
+  - '&ls 3 LSHFT'
   - $$mdi:keyboard-space$$
   - {t: SYMBOL, h: SYMBOL}
   - RGUI
   NAVNUM:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-tab$$
-  - {t: LGUI, h: LGUI}
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-option$$'}
+  - '&hs LGUI LGUI'
+  - '&hs LALT LALT'
   - HOME
   - END
   - $$mdi:pan-up$$
@@ -66,7 +66,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$'}
+  - '&hs LCTRL LCTRL'
   - PG UP
   - $$mdi:pan-left$$
   - $$mdi:mouse-left-click-outline$$
@@ -191,7 +191,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - LGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - CONFIG
   - '&mkp MB3'
   - RGUI
@@ -240,7 +240,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - LGUI
   - $$mdi:progress-download$$
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - $$mdi:progress-download$$
   - RGUI
