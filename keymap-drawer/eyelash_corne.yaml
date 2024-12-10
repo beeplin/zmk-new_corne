@@ -44,7 +44,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - LGUI
   - {t: '$$mdi:keyboard-esc$$', h: NAVNUM}
-  - '&ls 3 LSHFT'
+  - {t: '$$mdi:apple-keyboard-shift$$', h: FUNMSE}
   - $$mdi:keyboard-space$$
   - {t: SYMBOL, h: SYMBOL}
   - RGUI
@@ -191,7 +191,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - LGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - CONFIG
   - '&mkp MB3'
   - RGUI
@@ -240,7 +240,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - LGUI
   - $$mdi:progress-download$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - $$mdi:progress-download$$
   - RGUI
