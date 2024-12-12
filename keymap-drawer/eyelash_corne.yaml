@@ -152,9 +152,9 @@ layers:
   - F9
   - F8
   - F7
-  - $$mdi:volume-high$$
+  - $$mdi:volume-off$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - $$mdi:skip-previous$$
+  - PLAY PAUSE
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
@@ -165,11 +165,11 @@ layers:
   - F6
   - F5
   - F4
-  - $$mdi:volume-off$$
+  - $$mdi:volume-high$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - PLAY PAUSE
+  - $$mdi:skip-previous$$
   - $$mdi:mouse-left-click-outline$$
   - '&mkp MB3'
   - $$mdi:mouse-right-click-outline$$
