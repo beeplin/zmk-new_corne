@@ -13,7 +13,7 @@ layers:
   - O
   - P
   - {t: \, s: '|'}
-  - {t: FUNMSE, h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:apple-keyboard-control$$
   - A
   - S
   - D
@@ -44,26 +44,26 @@ layers:
   - {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: LGUI, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:keyboard-esc$$', h: NAVNUM}
+  - {t: '$$mdi:keyboard-space$$', h: FUNMSE}
   - $$mdi:keyboard-space$$
-  - (
-  - {t: '$$mdi:apple-keyboard-shift$$', h: SYMBOL}
-  - '{'
+  - {t: '$$mdi:apple-keyboard-shift$$', h: SYMMED}
+  - $$mdi:apple-keyboard-caps$$
   NAVNUM:
-  - {t: LGUI, h: LGUI}
-  - $$mdi:pan-left$$
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:arrow-up-bold$$
   - $$mdi:backspace-reverse-outline$$
-  - $$mdi:pan-right$$
+  - $$mdi:keyboard-tab$$
   - $$mdi:pan-up$$
   - INS
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
-  - PLAY PAUSE
-  - {t: RGUI, h: RGUI}
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -75,13 +75,13 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
-  - $$mdi:skip-previous$$
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - Ctl+ Z
-  - Ctl+ X
-  - Ctl+ C
-  - Ctl+ V
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: LGUI, h: LGUI}
+  - '&key_repeat'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - PG DN
   - $$mdi:mouse-right-click-outline$$
   - $$mdi:pan-down$$
@@ -89,16 +89,16 @@ layers:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
-  - $$mdi:skip-next$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PRINTSCREEN
+  - $$mdi:volume-off$$
+  - {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '0', s: )}
   - {t: LGUI, h: '$$mdi:apple-keyboard-option$$'}
-  SYMBOL:
-  - {t: LGUI, h: LGUI}
+  SYMMED:
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-option$$'}
   - '!'
   - '@'
   - '#'
@@ -109,58 +109,58 @@ layers:
   - '&'
   - '*'
   - '|'
-  - '"'
-  - {t: RGUI, h: RGUI}
+  - {t: \, s: '|'}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '`', s: '~'}
   - '{'
   - {t: '[', s: '{'}
   - (
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:volume-high$$
   - RGB EFR
   - RGB TOG
   - RGB EFF
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '-', s: _}
-  - +
+  - $$mdi:skip-previous$$
   - {t: '=', s: +}
+  - '"'
+  - {t: '''', s: '"'}
   - ':'
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '~'
   - '}'
   - {t: ']', s: '}'}
   - )
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:volume-low$$
   - PLAY PAUSE
   - RGB BRD
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:skip-next$$
   - _
   - <
   - '>'
   - '?'
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
   - {t: LGUI, h: '$$mdi:apple-keyboard-option$$'}
-  - CONFIG
-  - APP
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '-', s: _}
+  - +
+  - PLAY PAUSE
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   FUNMSE:
-  - {t: LGUI, h: LGUI}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-option$$'}
   - F12
   - F9
   - F8
   - F7
-  - '&studio_unlock'
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: RGUI, h: RGUI}
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$', type: held}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-option$$'}
+  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$'}
   - F11
   - F6
   - F5
@@ -170,31 +170,31 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - '&mkp MB4'
-  - '&mkp MB5'
+  - $$mdi:mouse-left-click-outline$$
+  - '&mkp MB3'
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$'}
   - F10
   - F3
   - F2
   - F1
-  - '&win_sleep'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RCLK
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-left$$
   - $$mdi:pan-down$$
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - LGUI
+  - $$mdi:apple-keyboard-shift$$
+  - {t: LGUI, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB3'
-  - RGUI
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - CONFIG
+  - APP
+  - {t: LGUI, h: '$$mdi:apple-keyboard-option$$'}
   CONFIG:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -238,9 +238,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
