@@ -152,7 +152,7 @@ layers:
   - F9
   - F8
   - F7
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - AC BACK
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -180,7 +180,7 @@ layers:
   - F3
   - F2
   - F1
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - AC FORWARD
   - RCLK
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-left$$
