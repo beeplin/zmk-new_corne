@@ -93,8 +93,8 @@
         layer3 {
             display-name = "FUNMSE";
             bindings = <
-&hsk LALT LALT   &kp F12         &kp F9           &kp F8            &kp F7           &kp C_VOL_UP                      &mmv MOVE_UP                      &kp C_PREV       &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT  &kp LALT
-&hsk LCTRL LCTRL &kp F11         &kp F6           &kp F5            &kp F4           &kp C_MUTE       &mmv MOVE_LEFT   &mkp LCLK        &mmv MOVE_RIGHT  &kp C_PLAY_PAUSE &mkp LCLK        &mkp MB3         &mkp RCLK        &none            &kp LCTRL
+&hsk LALT LALT   &kp F12         &kp F9           &kp F8            &kp F7           &kp C_MUTE                        &mmv MOVE_UP                      &kp C_PLAY_PAUSE &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT  &kp LALT
+&hsk LCTRL LCTRL &kp F11         &kp F6           &kp F5            &kp F4           &kp C_VOL_UP     &mmv MOVE_LEFT   &mkp LCLK        &mmv MOVE_RIGHT  &kp C_PREV       &mkp LCLK        &mkp MB3         &mkp RCLK        &none            &kp LCTRL
 &hsk LSHFT LSHFT &kp F10         &kp F3           &kp F2            &kp F1           &kp C_VOL_DN     &kp RCLK         &mmv MOVE_DOWN                    &kp C_NEXT       &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT  &kp LSHFT
                                                   &none             &none            &none                                                               &mo 4            &kp K_APP        &hsk LALT LGUI >;
             sensor-bindings = <&scroll_encoder>;
