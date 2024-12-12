@@ -46,7 +46,7 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: NAVNUM}
   - {t: '$$mdi:keyboard-space$$', h: FUNMSE}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: SYMMED}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: SYMBOL}
   - $$mdi:apple-keyboard-caps$$
   NAVNUM:
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-option$$'}
@@ -97,7 +97,7 @@ layers:
   - {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '0', s: )}
   - {t: LGUI, h: '$$mdi:apple-keyboard-option$$'}
-  SYMMED:
+  SYMBOL:
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:apple-keyboard-option$$'}
   - '!'
   - '@'
