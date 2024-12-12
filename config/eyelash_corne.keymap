@@ -93,9 +93,9 @@
         layer3 {
             display-name = "FUNMSE";
             bindings = <
-&hsk LALT LALT   &kp F12         &kp F9           &kp F8            &kp F7           &none                             &mmv MOVE_UP                      &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT  &hsk LALT LALT   &kp LALT
+&hsk LALT LALT   &kp F12         &kp F9           &kp F8            &kp F7           &kp C_AC_BACK                     &mmv MOVE_UP                      &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT  &hsk LALT LALT   &kp LALT
 &hsk LCTRL LCTRL &kp F11         &kp F6           &kp F5            &kp F4           &none            &mmv MOVE_LEFT   &mkp LCLK        &mmv MOVE_RIGHT  &none            &mkp LCLK        &mkp MB3         &mkp RCLK        &hsk LCTRL LCTRL &kp LCTRL
-&hsk LSHFT LSHFT &kp F10         &kp F3           &kp F2            &kp F1           &none            &kp RCLK         &mmv MOVE_DOWN                    &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT  &hsk LSHFT LSHFT &kp LSHFT
+&hsk LSHFT LSHFT &kp F10         &kp F3           &kp F2            &kp F1           &kp C_AC_FORWARD &kp RCLK         &mmv MOVE_DOWN                    &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT  &hsk LSHFT LSHFT &kp LSHFT
                                                   &none             &none            &none                                                               &mo 4            &kp K_APP        &hsk LALT LGUI >;
             sensor-bindings = <&scroll_encoder>;
         };
