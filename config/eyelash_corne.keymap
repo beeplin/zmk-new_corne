@@ -82,7 +82,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
         layer2 {
-            display-name = "SYMMED";
+            display-name = "SYMBOL";
             bindings = <
 &hsk LALT LALT   &kp EXCL         &kp AT           &kp POUND        &kp DLLR         &kp PRCNT                         &rgb_ug RGB_BRI                   &kp CARET        &kp AMPS         &kp ASTRK        &kp PIPE         &kp BSLH         &kp LALT
 &hsk LCTRL LCTRL &kp GRAVE        &kp LBRC         &kp LBKT         &kp LPAR         &kp C_BRI_UP     &rgb_ug RGB_EFR  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &kp C_AC_BACK    &kp EQUAL        &kp DQT          &kp SQT          &kp COLON        &kp LCTRL
